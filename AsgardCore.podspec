@@ -16,6 +16,6 @@ Pod::Spec.new do |s|
   # s.resource_bundles = {
   #   'AsgardCore' => ['AsgardCore/Assets/*.png']
   # }
-  
+
   s.dependency 'LDSwiftEventSource'
 end

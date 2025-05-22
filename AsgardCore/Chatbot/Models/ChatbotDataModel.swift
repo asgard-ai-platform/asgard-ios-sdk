@@ -269,19 +269,17 @@ public class AsgardConversationManager {
         case .messageStart:
             if let messageStart = response.fact.messageStart {
                 // Handle message start
-                //let message = messageStart.message
-
+                let _ = messageStart.message
             }
         case .messageDelta:
             if let messageDelta = response.fact.messageDelta {
                 // Handle message delta update
-                //let message = messageDelta.message
-
+                let _ = messageDelta.message
             }
         case .messageComplete:
             if let messageComplete = response.fact.messageComplete {
                 // Handle message completion
-                //let message = messageComplete.message
+                let _ = messageComplete.message
             }
         }
     }
