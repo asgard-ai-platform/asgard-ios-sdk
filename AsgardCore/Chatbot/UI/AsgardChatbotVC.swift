@@ -45,10 +45,24 @@ public class AsgardChatbotVC: UIHostingController<AsgardChatbotView> {
         }
         leftButton.tintColor = UIColor(theme.botMessage.textColor)
         navigationItem.leftBarButtonItem = leftButton
+        
+        // Apply theme in viewDidLoad
+        let navBarAppearance = UINavigationBarAppearance()
+        navBarAppearance.configureWithOpaqueBackground()
+        navBarAppearance.backgroundColor = UIColor(theme.chatbot.backgroundColor)
+        let textColor = UIColor(theme.botMessage.textColor)
+        navBarAppearance.titleTextAttributes = [.foregroundColor: textColor]
+        navBarAppearance.largeTitleTextAttributes = [.foregroundColor: textColor]
+        navigationController?.navigationBar.standardAppearance = navBarAppearance
+        navigationController?.navigationBar.scrollEdgeAppearance = navBarAppearance
+        navigationController?.navigationBar.compactAppearance = navBarAppearance
+        self.view.backgroundColor = UIColor(theme.chatbot.backgroundColor)
+        navigationController?.view.backgroundColor = UIColor(theme.chatbot.backgroundColor)
     }
 
     public override func viewWillAppear(_ animated: Bool) {
         super.viewWillAppear(animated)
+        // Ensure theme is applied when view is about to appear
         let navBarAppearance = UINavigationBarAppearance()
         navBarAppearance.configureWithOpaqueBackground()
         navBarAppearance.backgroundColor = UIColor(theme.chatbot.backgroundColor)
@@ -64,16 +78,20 @@ public class AsgardChatbotVC: UIHostingController<AsgardChatbotView> {
 
     public override func viewWillDisappear(_ animated: Bool) {
         super.viewWillDisappear(animated)
-        let defaultAppearance = UINavigationBarAppearance()
-        defaultAppearance.configureWithDefaultBackground()
-        navigationController?.navigationBar.standardAppearance = defaultAppearance
-        navigationController?.navigationBar.scrollEdgeAppearance = defaultAppearance
-        navigationController?.navigationBar.compactAppearance = defaultAppearance
+        AsgardTheme.restoreTheme()
+    }
+    
+    public override func viewDidDisappear(_ animated: Bool) {
+        super.viewDidDisappear(animated)
+        // Ensure theme is restored after view completely disappears
+        AsgardTheme.restoreTheme()
     }
 
     @objc private func closeTapped() {
         if isModal {
-            self.dismiss(animated: true)
+            self.dismiss(animated: true) { [weak self] in
+                AsgardTheme.restoreTheme()
+            }
         } else {
             navigationController?.popViewController(animated: true)
         }
