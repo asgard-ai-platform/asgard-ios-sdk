@@ -1,5 +1,6 @@
 import Foundation
 import UIKit
+import SwiftUI
 
 public struct AsgardChatbotConfig {
     /// API Key
@@ -65,6 +66,9 @@ public struct AsgardChatbotUIConfig {
     
     /// Initial Messages JSON Template
     public let initMessages: [String]
+
+    /// Enable Speech Recognition
+    public var enableSpeechRecognition: Bool
     
     /// UI Reset Callback
     public var onUIReset: (() -> Void)?
@@ -72,15 +76,20 @@ public struct AsgardChatbotUIConfig {
     /// UI Close Callback
     public var onUIClose: (() -> Void)?
     
+    /// Theme Configuration
+    public let theme: AsgardThemeConfig
+    
     public init(
-        title: String,
+        title: String = "Chatbot",
         avatar: String? = nil,
         enableLoadConfigFromService: Bool = false,
         debugMode: Bool = false,
-        botTypingPlaceholder: String = "Bot is typing...",
+        botTypingPlaceholder: String = "Bot is typing",
         initMessages: [String] = [],
+        enableSpeechRecognition: Bool = false,
         onUIReset: (() -> Void)? = nil,
-        onUIClose: (() -> Void)? = nil
+        onUIClose: (() -> Void)? = nil,
+        theme: AsgardThemeConfig = AsgardThemeConfig()
     ) {
         self.title = title
         self.avatar = avatar
@@ -88,7 +97,74 @@ public struct AsgardChatbotUIConfig {
         self.debugMode = debugMode
         self.botTypingPlaceholder = botTypingPlaceholder
         self.initMessages = initMessages
+        self.enableSpeechRecognition = enableSpeechRecognition
         self.onUIReset = onUIReset
         self.onUIClose = onUIClose
+        self.theme = theme
+    }
+}
+
+/// Theme Configuration Structure
+public struct AsgardThemeConfig {
+    /// Overall Chatbot Configuration
+    public let chatbot: ChatbotStyle
+    
+    /// Bot Message Style
+    public let botMessage: MessageStyle
+    
+    /// User Message Style
+    public let userMessage: MessageStyle
+    
+    public init(
+        chatbot: ChatbotStyle = ChatbotStyle(
+            backgroundColor: Color(hex: "1F1F1F"),
+            borderColor: Color(hex: "1F1F1F")
+        ),
+        botMessage: MessageStyle = MessageStyle(
+            backgroundColor: Color(hex: "585858"),
+            textColor: Color(hex: "FFFFFF")
+        ),
+        userMessage: MessageStyle = MessageStyle(
+            backgroundColor: Color(hex: "4767EB"),
+            textColor: Color(hex: "FFFFFF")
+        )
+    ) {
+        self.chatbot = chatbot
+        self.botMessage = botMessage
+        self.userMessage = userMessage
+    }
+}
+
+/// Overall Chatbot Style
+public struct ChatbotStyle {
+    /// Background Color
+    public let backgroundColor: Color
+    
+    /// Border Color
+    public let borderColor: Color
+    
+    public init(
+        backgroundColor: Color = Color(.systemBackground),
+        borderColor: Color = Color(.systemGray4)
+    ) {
+        self.backgroundColor = backgroundColor
+        self.borderColor = borderColor
+    }
+}
+
+/// Message Style
+public struct MessageStyle {
+    /// Background Color
+    public let backgroundColor: Color
+    
+    /// Text Color
+    public let textColor: Color
+    
+    public init(
+        backgroundColor: Color,
+        textColor: Color
+    ) {
+        self.backgroundColor = backgroundColor
+        self.textColor = textColor
     }
 }

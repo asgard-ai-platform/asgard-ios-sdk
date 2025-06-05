@@ -6,6 +6,7 @@
 //
 
 import Foundation
+import UIKit
 
 public final class Asgard {
     // MARK: - Properties
@@ -24,16 +25,46 @@ public final class Asgard {
         manager.getVersion()
     }
     
-    /// Create a new chatbot instance
+    /// Create a new chatbot instance without UI
+    /// - Parameter config: Chatbot configuration
+    /// - Returns: Chatbot instance
+    public static func getChatbot(config: AsgardChatbotConfig) -> AsgardChatbot {
+        return AsgardChatbot(config: config)
+    }
+    
+    /// Push chatbot to navigation stack
     /// - Parameters:
     ///   - config: Chatbot configuration
-    ///   - uiConfig: Optional UI configuration
-    /// - Returns: Chatbot instance
-    public static func getChatbot(
+    ///   - uiConfig: Chatbot UI configuration
+    ///   - viewController: Source view controller
+    public static func pushChatbot(
         config: AsgardChatbotConfig,
-        uiConfig: AsgardChatbotUIConfig? = nil
-    ) -> AsgardChatbot {
-        return AsgardChatbot(coreConfig: config, uiConfig: uiConfig)
+        uiConfig: AsgardChatbotUIConfig,
+        from viewController: UIViewController
+    ) {
+        let chatbot = AsgardChatbot(config: config)
+        let viewModel = AsgardChatbotViewModel(chatbot: chatbot, uiConfig: uiConfig)
+        let chatbotVC = AsgardChatbotVC(viewModel: viewModel, isModal: false)
+        viewController.navigationController?.pushViewController(chatbotVC, animated: true)
+    }
+    
+    /// Present chatbot modally
+    /// - Parameters:
+    ///   - config: Chatbot configuration
+    ///   - uiConfig: Chatbot UI configuration
+    ///   - viewController: Source view controller
+    public static func presentChatbot(
+        config: AsgardChatbotConfig,
+        uiConfig: AsgardChatbotUIConfig,
+        from viewController: UIViewController
+    ) {
+        let chatbot = AsgardChatbot(config: config)
+        let viewModel = AsgardChatbotViewModel(chatbot: chatbot, uiConfig: uiConfig)
+        let chatbotVC = AsgardChatbotVC(viewModel: viewModel, isModal: true)
+        let nav = UINavigationController(rootViewController: chatbotVC)
+        nav.modalPresentationStyle = .fullScreen
+        chatbotVC.modalPresentationStyle = .fullScreen
+        viewController.present(nav, animated: true)
     }
 }
 

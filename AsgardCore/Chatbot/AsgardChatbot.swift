@@ -7,22 +7,30 @@
 
 
 import Foundation
+import Combine
 
-public class AsgardChatbot {
+public final class AsgardChatbot {
     // MARK: - Properties
-    private let coreConfig: AsgardChatbotConfig
-    private let uiConfig: AsgardChatbotUIConfig?
+    private let config: AsgardChatbotConfig
     private let chatManager: AsgardChatManager
+    public let messagePublisher = PassthroughSubject<AsgardChatMessage, Never>()
+    public let connectionStatePublisher = CurrentValueSubject<Bool, Never>(false)
     private var isStarted: Bool = false
     
     // MARK: - Initialization
-    init(
-        coreConfig: AsgardChatbotConfig,
-        uiConfig: AsgardChatbotUIConfig?
-    ) {
-        self.coreConfig = coreConfig
-        self.uiConfig = uiConfig
-        self.chatManager = AsgardChatManager(config: coreConfig)
+    public init(config: AsgardChatbotConfig) {
+        self.config = config
+        self.chatManager = AsgardChatManager(config: config)
+        
+        // Set message receive callback
+        self.chatManager.setOnMessageReceived { [weak self] message in
+            self?.messagePublisher.send(message)
+        }
+        
+        // Set connection state callback
+        self.chatManager.setOnConnectionStateChanged { [weak self] isConnected in
+            self?.connectionStatePublisher.send(isConnected)
+        }
     }
     
     // MARK: - Public Methods
@@ -34,9 +42,11 @@ public class AsgardChatbot {
     ///   - customMessageId: Custom message ID
     public func sendMessage(_ text: String, action: String = "NONE", customMessageId: String = "") {
         guard isStarted else {
-            coreConfig.onExecutionError?(AsgardError.notInitialized)
+            config.onExecutionError?(AsgardError.notInitialized)
             return
         }
+        
+        // Send message to backend
         chatManager.sendMessage(text, action: action, customMessageId: customMessageId)
     }
     
@@ -52,13 +62,13 @@ public class AsgardChatbot {
         guard isStarted else { return }
         chatManager.stop()
         isStarted = false
-        coreConfig.onClose?()
+        config.onClose?()
     }
     
     /// Reset chatbot
     public func reset() {
         closed()
         start()
-        coreConfig.onReset?()
+        config.onReset?()
     }
 } 

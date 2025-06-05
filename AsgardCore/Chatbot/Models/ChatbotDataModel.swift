@@ -77,55 +77,6 @@ public enum AsgardTemplateType: String, Codable {
     // Add other types as needed
 }
 
-public struct AsgardChatMessage: Codable, Hashable {
-    public var text: String?
-    public var messageId: String?
-    public var replyToCustomMessageId: String?
-    public var payload: String?
-    public var isDebug: Bool?
-    public var idx: Int?
-    public var template: AsgardMessageTemplate?
-    public var state: AsgardConversationState?
-    
-    public init() {
-        self.text = nil
-        self.messageId = nil
-        self.replyToCustomMessageId = nil
-        self.payload = nil
-        self.isDebug = nil
-        self.idx = nil
-        self.template = nil
-        self.state = nil
-    }
-    
-    public var displayText: String {
-        return template?.text ?? text ?? ""
-    }
-    
-    public var isComplete: Bool {
-        return template != nil
-    }
-    
-    public static func == (lhs: AsgardChatMessage, rhs: AsgardChatMessage) -> Bool {
-        return lhs.text == rhs.text &&
-               lhs.messageId == rhs.messageId &&
-               lhs.replyToCustomMessageId == rhs.replyToCustomMessageId &&
-               lhs.payload == rhs.payload &&
-               lhs.isDebug == rhs.isDebug &&
-               lhs.idx == rhs.idx &&
-               lhs.template == rhs.template
-    }
-    
-    public func hash(into hasher: inout Hasher) {
-        hasher.combine(text)
-        hasher.combine(messageId)
-        hasher.combine(replyToCustomMessageId)
-        hasher.combine(payload)
-        hasher.combine(isDebug)
-        hasher.combine(idx)
-        hasher.combine(template)
-    }
-}
 
 public struct AsgardErrorInfo: Codable, Hashable {
     public var code: Int?

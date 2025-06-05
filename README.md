@@ -4,8 +4,8 @@ A modern iOS framework for building intelligent chatbot applications.
 
 ## Requirements
 
-- iOS 13.0+
-- Xcode 14.0+
+- iOS 14.0+
+- Xcode 15.0+
 - Swift 5.0+
 
 ## Dependencies
