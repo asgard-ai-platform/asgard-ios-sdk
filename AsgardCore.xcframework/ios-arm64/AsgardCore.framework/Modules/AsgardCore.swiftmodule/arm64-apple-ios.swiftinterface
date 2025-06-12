@@ -1,0 +1,460 @@
+// swift-interface-format-version: 1.0
+// swift-compiler-version: Apple Swift version 6.1 effective-5.10 (swiftlang-6.1.0.110.21 clang-1700.0.13.3)
+// swift-module-flags: -target arm64-apple-ios13.0 -enable-objc-interop -enable-library-evolution -swift-version 5 -enforce-exclusivity=checked -O -enable-experimental-feature DebugDescriptionMacro -enable-bare-slash-regex -module-name AsgardCore
+// swift-module-flags-ignorable:  -interface-compiler-version 6.1
+import Combine
+import Foundation
+import Speech
+import Swift
+import UIKit
+import _Concurrency
+import _StringProcessing
+import _SwiftConcurrencyShims
+@objc @_hasMissingDesignatedInitializers @_Concurrency.MainActor @preconcurrency public class TypingIndicatorView : UIKit.UIView {
+  @_Concurrency.MainActor @preconcurrency @objc override dynamic public func removeFromSuperview()
+  @objc deinit
+}
+@objc @_hasMissingDesignatedInitializers @_Concurrency.MainActor @preconcurrency public class AsgardChatbotVC : UIKit.UIViewController {
+  @_Concurrency.MainActor @preconcurrency @objc override dynamic public var inputAccessoryView: UIKit.UIView? {
+    @objc get
+  }
+  @_Concurrency.MainActor @preconcurrency @objc override dynamic public var canBecomeFirstResponder: Swift.Bool {
+    @objc get
+  }
+  @_Concurrency.MainActor @preconcurrency @objc override dynamic public var preferredStatusBarStyle: UIKit.UIStatusBarStyle {
+    @objc get
+  }
+  @_Concurrency.MainActor @preconcurrency public init(viewModel: AsgardCore.AsgardChatbotViewModel, isModal: Swift.Bool = true)
+  @_Concurrency.MainActor @preconcurrency @objc override dynamic public func viewDidLoad()
+  @_Concurrency.MainActor @preconcurrency @objc override dynamic public func viewWillAppear(_ animated: Swift.Bool)
+  @_Concurrency.MainActor @preconcurrency @objc override dynamic public func viewWillDisappear(_ animated: Swift.Bool)
+  @objc deinit
+}
+extension AsgardCore.AsgardChatbotVC : UIKit.UITableViewDataSource {
+  @_Concurrency.MainActor @preconcurrency @objc dynamic public func tableView(_ tableView: UIKit.UITableView, numberOfRowsInSection section: Swift.Int) -> Swift.Int
+  @_Concurrency.MainActor @preconcurrency @objc dynamic public func tableView(_ tableView: UIKit.UITableView, cellForRowAt indexPath: Foundation.IndexPath) -> UIKit.UITableViewCell
+}
+extension AsgardCore.AsgardChatbotVC : UIKit.UITableViewDelegate {
+  @_Concurrency.MainActor @preconcurrency @objc dynamic public func tableView(_ tableView: UIKit.UITableView, didSelectRowAt indexPath: Foundation.IndexPath)
+  @_Concurrency.MainActor @preconcurrency @objc dynamic public func scrollViewWillBeginDragging(_ scrollView: UIKit.UIScrollView)
+  @_Concurrency.MainActor @preconcurrency @objc dynamic public func scrollViewDidScroll(_ scrollView: UIKit.UIScrollView)
+  @_Concurrency.MainActor @preconcurrency @objc dynamic public func tableView(_ tableView: UIKit.UITableView, willDisplay cell: UIKit.UITableViewCell, forRowAt indexPath: Foundation.IndexPath)
+  @_Concurrency.MainActor @preconcurrency @objc dynamic public func tableView(_ tableView: UIKit.UITableView, heightForRowAt indexPath: Foundation.IndexPath) -> CoreFoundation.CGFloat
+  @_Concurrency.MainActor @preconcurrency @objc dynamic public func scrollViewDidEndDragging(_ scrollView: UIKit.UIScrollView, willDecelerate decelerate: Swift.Bool)
+}
+extension AsgardCore.AsgardChatbotVC : UIKit.UITextViewDelegate {
+  @_Concurrency.MainActor @preconcurrency @objc dynamic public func textViewDidBeginEditing(_ textView: UIKit.UITextView)
+  @_Concurrency.MainActor @preconcurrency @objc dynamic public func textViewDidChange(_ textView: UIKit.UITextView)
+  @_Concurrency.MainActor @preconcurrency @objc dynamic public func textView(_ textView: UIKit.UITextView, shouldChangeTextIn range: Foundation.NSRange, replacementText text: Swift.String) -> Swift.Bool
+  @_Concurrency.MainActor @preconcurrency @objc dynamic public func textViewDidEndEditing(_ textView: UIKit.UITextView)
+  @_Concurrency.MainActor @preconcurrency @objc dynamic public func textViewShouldEndEditing(_ textView: UIKit.UITextView) -> Swift.Bool
+}
+public class AsgardChatbotViewModel : Combine.ObservableObject {
+  final public let chatbot: AsgardCore.AsgardChatbot
+  final public let uiConfig: AsgardCore.AsgardChatbotUIConfig
+  public init(chatbot: AsgardCore.AsgardChatbot, uiConfig: AsgardCore.AsgardChatbotUIConfig)
+  public func sendMessage() async
+  public func reset()
+  public func close()
+  public typealias ObjectWillChangePublisher = Combine.ObservableObjectPublisher
+  @objc deinit
+}
+extension UIKit.UIColor {
+  public static let themeColor: UIKit.UIColor
+  public static let borderColor: UIKit.UIColor
+  public static let botMessageBoxColor: UIKit.UIColor
+  public static let botMessageTextColor: UIKit.UIColor
+  public static let userMessageBoxColor: UIKit.UIColor
+  public static let userMessageTextColor: UIKit.UIColor
+  convenience public init(hex: Swift.String)
+  public var isLight: Swift.Bool {
+    get
+  }
+}
+final public class AsgardChatbot {
+  final public let messagePublisher: Combine.PassthroughSubject<AsgardCore.AsgardChatMessage, Swift.Never>
+  final public let connectionStatePublisher: Combine.CurrentValueSubject<Swift.Bool, Swift.Never>
+  public init(config: AsgardCore.AsgardChatbotConfig)
+  final public func sendMessage(_ text: Swift.String, action: Swift.String = "NONE", customMessageId: Swift.String = "")
+  final public func start()
+  final public func closed()
+  final public func reset()
+  @objc deinit
+}
+public enum JSONUtils {
+  public enum JSONError : Swift.Error {
+    case invalidString
+    case decodeFailed(any Swift.Error)
+    case encodeFailed(any Swift.Error)
+    case serializationFailed(any Swift.Error)
+  }
+  public static func stringify<T>(_ object: T, prettyPrinted: Swift.Bool = true) -> Swift.String? where T : Swift.Decodable, T : Swift.Encodable
+  public static func parse<T>(_ jsonString: Swift.String, as type: T.Type) -> T? where T : Swift.Decodable, T : Swift.Encodable
+  public static func parse<T>(_ data: Foundation.Data, as type: T.Type) -> T? where T : Swift.Decodable, T : Swift.Encodable
+  public static func toDictionary<T>(_ object: T) -> [Swift.String : Any]? where T : Swift.Decodable, T : Swift.Encodable
+}
+final public class AsgardChatManager {
+  public init(config: AsgardCore.AsgardChatbotConfig)
+  final public func setOnMessageReceived(_ handler: @escaping (AsgardCore.AsgardChatMessage) -> Swift.Void)
+  final public func setOnConnectionStateChanged(_ handler: @escaping (Swift.Bool) -> Swift.Void)
+  final public func sendMessage(_ text: Swift.String, action: Swift.String = "NONE", customMessageId: Swift.String = "")
+  final public func stop()
+  @objc deinit
+}
+@objc public enum ALogType : Swift.Int {
+  case error
+  case warning
+  case info
+  case debug
+  public init?(rawValue: Swift.Int)
+  public typealias RawValue = Swift.Int
+  public var rawValue: Swift.Int {
+    get
+  }
+}
+@objc public enum ALogDisplayLevel : Swift.Int {
+  case none
+  case normal
+  case full
+  public init?(rawValue: Swift.Int)
+  public typealias RawValue = Swift.Int
+  public var rawValue: Swift.Int {
+    get
+  }
+}
+@objc @_inheritsConvenienceInitializers @objcMembers public class ALog : ObjectiveC.NSObject {
+  @objc public static var displayLevel: AsgardCore.ALogDisplayLevel
+  @objc public static func log(_ type: AsgardCore.ALogType, _ message: Swift.String)
+  @objc public static func debug(_ message: Swift.String)
+  @objc public static func info(_ message: Swift.String)
+  @objc public static func warning(_ message: Swift.String)
+  @objc public static func error(_ message: Swift.String)
+  @objc override dynamic public init()
+  @objc deinit
+}
+public enum LogManager {
+  public static func store(_ log: [Swift.String : Swift.String])
+  public static func loadLogs() -> [[Swift.String : Swift.String]]
+  public static func clearLogs()
+  public static func exportLogs() -> Swift.String
+}
+@_hasMissingDesignatedInitializers final public class Asgard {
+  public static func setLogLevel(_ level: AsgardCore.ALogDisplayLevel)
+  public static func getVersion() -> Swift.String
+  public static func getChatbot(config: AsgardCore.AsgardChatbotConfig) -> AsgardCore.AsgardChatbot
+  public static func pushChatbot(config: AsgardCore.AsgardChatbotConfig, uiConfig: AsgardCore.AsgardChatbotUIConfig, from viewController: UIKit.UIViewController)
+  public static func presentChatbot(config: AsgardCore.AsgardChatbotConfig, uiConfig: AsgardCore.AsgardChatbotUIConfig, from viewController: UIKit.UIViewController)
+  @objc deinit
+}
+public enum AsgardError : Swift.Error {
+  case notInitialized
+  case invalidApiKey
+  case invalidEndpoint
+  case invalidBotProviderEndpoint
+  case serviceError(Swift.String)
+  case invalidResponse
+  case invalidURL
+  public var localizedDescription: Swift.String {
+    get
+  }
+}
+public enum MessageType : Swift.String, Swift.Codable {
+  case bot
+  case user
+  case error
+  public init?(rawValue: Swift.String)
+  public typealias RawValue = Swift.String
+  public var rawValue: Swift.String {
+    get
+  }
+}
+public struct AsgardChatMessage : Swift.Codable, Swift.Hashable, Swift.Identifiable {
+  public var id: Swift.String {
+    get
+  }
+  public var messageId: Swift.String?
+  public var text: Swift.String?
+  public var replyToCustomMessageId: Swift.String?
+  public var payload: Swift.String?
+  public var isDebug: Swift.Bool?
+  public var idx: Swift.Int?
+  public var template: AsgardCore.AsgardMessageTemplate?
+  public var state: AsgardCore.AsgardConversationState?
+  public let messageType: AsgardCore.MessageType
+  public let timestamp: Foundation.Date
+  public var eventType: AsgardCore.AsgardSSEEventType?
+  public var isComplete: Swift.Bool
+  public init(_ messageType: AsgardCore.MessageType = .bot, timestamp: Foundation.Date? = nil)
+  public var displayText: Swift.String {
+    get
+  }
+  public var timeString: Swift.String {
+    get
+  }
+  public static func == (lhs: AsgardCore.AsgardChatMessage, rhs: AsgardCore.AsgardChatMessage) -> Swift.Bool
+  public func hash(into hasher: inout Swift.Hasher)
+  public typealias ID = Swift.String
+  public func encode(to encoder: any Swift.Encoder) throws
+  public var hashValue: Swift.Int {
+    get
+  }
+  public init(from decoder: any Swift.Decoder) throws
+}
+public struct AsgardChatbotConfig {
+  public let apiKey: Swift.String
+  public let endpoint: Swift.String
+  public let botProviderEndpoint: Swift.String
+  public let customChannelId: Swift.String
+  public var onExecutionError: ((any Swift.Error) -> Swift.Void)?
+  public var transformSsePayload: ((Swift.String) -> Swift.Void)?
+  public var onReset: (() -> Swift.Void)?
+  public var onClose: (() -> Swift.Void)?
+  public init(apiKey: Swift.String, endpoint: Swift.String, botProviderEndpoint: Swift.String, customChannelId: Swift.String? = nil, onExecutionError: ((any Swift.Error) -> Swift.Void)? = nil, transformSsePayload: ((Swift.String) -> Swift.Void)? = nil, onReset: (() -> Swift.Void)? = nil, onClose: (() -> Swift.Void)? = nil)
+}
+public struct AsgardSSEResponse : Swift.Codable {
+  public let eventType: AsgardCore.AsgardSSEEventType
+  public let requestId: Swift.String
+  public let eventId: Swift.String
+  public let namespace: Swift.String
+  public let botProviderName: Swift.String
+  public let customChannelId: Swift.String
+  public let fact: AsgardCore.AsgardSSEFact
+  public var rawString: Swift.String
+  public var conversationState: AsgardCore.AsgardConversationState {
+    get
+  }
+  public init()
+  public func encode(to encoder: any Swift.Encoder) throws
+  public init(from decoder: any Swift.Decoder) throws
+}
+public enum AsgardSSEEventType : Swift.String, Swift.Codable {
+  case runInit
+  case runDone
+  case messageStart
+  case messageDelta
+  case messageComplete
+  public init?(rawValue: Swift.String)
+  public typealias RawValue = Swift.String
+  public var rawValue: Swift.String {
+    get
+  }
+}
+public enum AsgardConversationState : Swift.String, Swift.Codable {
+  case initializing
+  case inProgress
+  case completed
+  case error
+  public init?(rawValue: Swift.String)
+  public typealias RawValue = Swift.String
+  public var rawValue: Swift.String {
+    get
+  }
+}
+public enum AsgardTemplateType : Swift.String, Swift.Codable {
+  case text
+  public init?(rawValue: Swift.String)
+  public typealias RawValue = Swift.String
+  public var rawValue: Swift.String {
+    get
+  }
+}
+public struct AsgardErrorInfo : Swift.Codable, Swift.Hashable {
+  public var code: Swift.Int?
+  public var message: Swift.String?
+  public init()
+  public static func == (lhs: AsgardCore.AsgardErrorInfo, rhs: AsgardCore.AsgardErrorInfo) -> Swift.Bool
+  public func hash(into hasher: inout Swift.Hasher)
+  public func encode(to encoder: any Swift.Encoder) throws
+  public var hashValue: Swift.Int {
+    get
+  }
+  public init(from decoder: any Swift.Decoder) throws
+}
+public enum AsgardMessageType : Swift.String, Swift.Codable, Swift.Hashable {
+  case `default`
+  case delta
+  case complete
+  case done
+  public init?(rawValue: Swift.String)
+  public typealias RawValue = Swift.String
+  public var rawValue: Swift.String {
+    get
+  }
+}
+public struct AsgardSSEFact : Swift.Codable {
+  public let runInit: [Swift.String : Swift.String]?
+  public let runDone: [Swift.String : Swift.String]?
+  public let runError: Swift.String?
+  public let processStart: Swift.String?
+  public let processComplete: Swift.String?
+  public let messageStart: AsgardCore.AsgardSSEMessageStart?
+  public let messageDelta: AsgardCore.AsgardSSEMessageDelta?
+  public let messageComplete: AsgardCore.AsgardSSEMessageComplete?
+  public var currentEvent: AsgardCore.AsgardSSEEventType? {
+    get
+  }
+  public init()
+  public func encode(to encoder: any Swift.Encoder) throws
+  public init(from decoder: any Swift.Decoder) throws
+}
+public struct AsgardSSEMessageStart : Swift.Codable {
+  public let message: AsgardCore.AsgardSSEMessage
+  public func encode(to encoder: any Swift.Encoder) throws
+  public init(from decoder: any Swift.Decoder) throws
+}
+public struct AsgardSSEMessageDelta : Swift.Codable {
+  public let message: AsgardCore.AsgardSSEMessage
+  public func encode(to encoder: any Swift.Encoder) throws
+  public init(from decoder: any Swift.Decoder) throws
+}
+public struct AsgardSSEMessageComplete : Swift.Codable {
+  public let message: AsgardCore.AsgardSSEMessage
+  public func encode(to encoder: any Swift.Encoder) throws
+  public init(from decoder: any Swift.Decoder) throws
+}
+public struct AsgardSSEMessage : Swift.Codable {
+  public let messageId: Swift.String
+  public let replyToCustomMessageId: Swift.String?
+  public let text: Swift.String
+  public let payload: Swift.String?
+  public let isDebug: Swift.Bool
+  public let idx: Swift.Int?
+  public let template: AsgardCore.AsgardMessageTemplate?
+  public var isEmpty: Swift.Bool {
+    get
+  }
+  public var isComplete: Swift.Bool {
+    get
+  }
+  public var displayText: Swift.String {
+    get
+  }
+  public func encode(to encoder: any Swift.Encoder) throws
+  public init(from decoder: any Swift.Decoder) throws
+}
+public struct AsgardMessageTemplate : Swift.Codable, Swift.Hashable {
+  public let type: AsgardCore.AsgardTemplateType
+  public let text: Swift.String
+  public let payload: Swift.String?
+  public static func == (lhs: AsgardCore.AsgardMessageTemplate, rhs: AsgardCore.AsgardMessageTemplate) -> Swift.Bool
+  public func hash(into hasher: inout Swift.Hasher)
+  public func encode(to encoder: any Swift.Encoder) throws
+  public var hashValue: Swift.Int {
+    get
+  }
+  public init(from decoder: any Swift.Decoder) throws
+}
+@_hasMissingDesignatedInitializers public class AsgardConversationManager {
+  public static let shared: AsgardCore.AsgardConversationManager
+  public func handleSSEResponse(_ response: AsgardCore.AsgardSSEResponse)
+  public func getCurrentState() -> AsgardCore.AsgardConversationState
+  public func getMessages() -> [AsgardCore.AsgardChatMessage]
+  @objc deinit
+}
+public struct AsgardChatbotUIConfig {
+  public let title: Swift.String?
+  public let avatar: Swift.String?
+  public let debugMode: Swift.Bool?
+  public let inputPlaceholder: Swift.String?
+  public let botTypingPlaceholder: Swift.String?
+  public let initMessages: [Swift.String]?
+  public let speechRecognition: AsgardCore.SpeechRecognitionConfig?
+  public var onUIReset: (() -> Swift.Void)?
+  public var onUIClose: (() -> Swift.Void)?
+  public let theme: AsgardCore.AsgardThemeConfig?
+  public init(title: Swift.String? = nil, avatar: Swift.String? = nil, debugMode: Swift.Bool? = nil, inputPlaceholder: Swift.String? = nil, botTypingPlaceholder: Swift.String? = nil, initMessages: [Swift.String]? = nil, speechRecognition: AsgardCore.SpeechRecognitionConfig? = nil, onUIReset: (() -> Swift.Void)? = nil, onUIClose: (() -> Swift.Void)? = nil, theme: AsgardCore.AsgardThemeConfig? = nil)
+  public static var `default`: AsgardCore.AsgardChatbotUIConfig {
+    get
+  }
+}
+public struct AsgardThemeConfig {
+  public let chatbot: AsgardCore.AsgardChatbotStyle
+  public let botMessage: AsgardCore.AsgardMessageStyle
+  public let userMessage: AsgardCore.AsgardMessageStyle
+  public init(chatbot: AsgardCore.AsgardChatbotStyle = AsgardChatbotStyle(
+            backgroundColor: .themeColor,
+            borderColor: .borderColor
+        ), botMessage: AsgardCore.AsgardMessageStyle = AsgardMessageStyle(
+            backgroundColor: .botMessageBoxColor,
+            textColor: .botMessageTextColor
+        ), userMessage: AsgardCore.AsgardMessageStyle = AsgardMessageStyle(
+            backgroundColor: .userMessageBoxColor,
+            textColor: .userMessageTextColor
+        ))
+}
+public struct AsgardChatbotStyle {
+  public let backgroundColor: UIKit.UIColor
+  public let borderColor: UIKit.UIColor
+  public init(backgroundColor: UIKit.UIColor = .themeColor, borderColor: UIKit.UIColor = .botMessageBoxColor)
+}
+public struct AsgardMessageStyle {
+  public let backgroundColor: UIKit.UIColor
+  public let textColor: UIKit.UIColor
+  public init(backgroundColor: UIKit.UIColor, textColor: UIKit.UIColor)
+}
+public struct AsgardTheme {
+  public static var backgroundColor: UIKit.UIColor {
+    get
+  }
+  public static var borderColor: UIKit.UIColor {
+    get
+  }
+  public static var textColor: UIKit.UIColor {
+    get
+  }
+  public static var userMessageBackgroundColor: UIKit.UIColor {
+    get
+  }
+  public static var userMessageTextColor: UIKit.UIColor {
+    get
+  }
+  public static var botMessageBackgroundColor: UIKit.UIColor {
+    get
+  }
+  public static var botMessageTextColor: UIKit.UIColor {
+    get
+  }
+}
+public struct SpeechRecognitionConfig {
+  public struct Text {
+    public var startSpeaking: Swift.String
+    public var listening: Swift.String
+    public var noSpeechDetected: Swift.String
+    public var micPermissionDenied: Swift.String
+    public var speechPermissionDenied: Swift.String
+    public var deviceNotSupported: Swift.String
+    public var requestPermission: Swift.String
+    public var unknownError: Swift.String
+    public init(startSpeaking: Swift.String = "Please start speaking...", listening: Swift.String = "Listening...", noSpeechDetected: Swift.String = "No speech detected.\n\nPlease tap the microphone icon below\nto try again.", micPermissionDenied: Swift.String = "Microphone access is required for this feature.\n\nPlease enable microphone access in\nyour device's system settings.", speechPermissionDenied: Swift.String = "Speech recognition access is required for this feature.\n\nPlease enable speech recognition in\nyour device's system settings.", deviceNotSupported: Swift.String = "Speech recognition is not supported on this device", requestPermission: Swift.String = "Please allow speech recognition access", unknownError: Swift.String = "An unexpected error occurred")
+  }
+  public var text: AsgardCore.SpeechRecognitionConfig.Text
+  public var locale: Foundation.Locale
+  public var isEnabled: Swift.Bool
+  public init(text: AsgardCore.SpeechRecognitionConfig.Text, locale: Foundation.Locale, isEnabled: Swift.Bool = true)
+}
+@objc @_inheritsConvenienceInitializers @_hasMissingDesignatedInitializers @_Concurrency.MainActor @preconcurrency public class MessageCell : UIKit.UITableViewCell {
+  @_Concurrency.MainActor @preconcurrency public static let reuseIdentifier: Swift.String
+  @_Concurrency.MainActor @preconcurrency @objc override dynamic public init(style: UIKit.UITableViewCell.CellStyle, reuseIdentifier: Swift.String?)
+  @_Concurrency.MainActor @preconcurrency public func configure(with message: AsgardCore.AsgardChatMessage, theme: AsgardCore.AsgardThemeConfig?, uiConfig: AsgardCore.AsgardChatbotUIConfig)
+  @_Concurrency.MainActor @preconcurrency @objc override dynamic public func prepareForReuse()
+  @objc deinit
+}
+extension AsgardCore.ALogType : Swift.Equatable {}
+extension AsgardCore.ALogType : Swift.Hashable {}
+extension AsgardCore.ALogType : Swift.RawRepresentable {}
+extension AsgardCore.ALogDisplayLevel : Swift.Equatable {}
+extension AsgardCore.ALogDisplayLevel : Swift.Hashable {}
+extension AsgardCore.ALogDisplayLevel : Swift.RawRepresentable {}
+extension AsgardCore.MessageType : Swift.Equatable {}
+extension AsgardCore.MessageType : Swift.Hashable {}
+extension AsgardCore.MessageType : Swift.RawRepresentable {}
+extension AsgardCore.AsgardSSEEventType : Swift.Equatable {}
+extension AsgardCore.AsgardSSEEventType : Swift.Hashable {}
+extension AsgardCore.AsgardSSEEventType : Swift.RawRepresentable {}
+extension AsgardCore.AsgardConversationState : Swift.Equatable {}
+extension AsgardCore.AsgardConversationState : Swift.Hashable {}
+extension AsgardCore.AsgardConversationState : Swift.RawRepresentable {}
+extension AsgardCore.AsgardTemplateType : Swift.Equatable {}
+extension AsgardCore.AsgardTemplateType : Swift.Hashable {}
+extension AsgardCore.AsgardTemplateType : Swift.RawRepresentable {}
+extension AsgardCore.AsgardMessageType : Swift.RawRepresentable {}
