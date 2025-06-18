@@ -20,6 +20,167 @@
       },
       {
         "kind": "Import",
+        "name": "Combine",
+        "printedName": "Combine",
+        "declKind": "Import",
+        "moduleName": "AsgardCore"
+      },
+      {
+        "kind": "TypeDecl",
+        "name": "AsgardChatbot",
+        "printedName": "AsgardChatbot",
+        "children": [
+          {
+            "kind": "Function",
+            "name": "sendMessage",
+            "printedName": "sendMessage(_:action:customMessageId:)",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "Void",
+                "printedName": "()"
+              },
+              {
+                "kind": "TypeNominal",
+                "name": "String",
+                "printedName": "Swift.String",
+                "usr": "s:SS"
+              },
+              {
+                "kind": "TypeNominal",
+                "name": "String",
+                "printedName": "Swift.String",
+                "hasDefaultArg": true,
+                "usr": "s:SS"
+              },
+              {
+                "kind": "TypeNominal",
+                "name": "String",
+                "printedName": "Swift.String",
+                "hasDefaultArg": true,
+                "usr": "s:SS"
+              }
+            ],
+            "declKind": "Func",
+            "usr": "s:10AsgardCore0A7ChatbotC11sendMessage_6action06customE2IdySS_S2StF",
+            "mangledName": "$s10AsgardCore0A7ChatbotC11sendMessage_6action06customE2IdySS_S2StF",
+            "moduleName": "AsgardCore",
+            "declAttributes": [
+              "Final",
+              "AccessControl",
+              "RawDocComment"
+            ],
+            "funcSelfKind": "NonMutating"
+          },
+          {
+            "kind": "Function",
+            "name": "start",
+            "printedName": "start()",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "Void",
+                "printedName": "()"
+              }
+            ],
+            "declKind": "Func",
+            "usr": "s:10AsgardCore0A7ChatbotC5startyyF",
+            "mangledName": "$s10AsgardCore0A7ChatbotC5startyyF",
+            "moduleName": "AsgardCore",
+            "declAttributes": [
+              "Final",
+              "AccessControl",
+              "RawDocComment"
+            ],
+            "funcSelfKind": "NonMutating"
+          },
+          {
+            "kind": "Function",
+            "name": "closed",
+            "printedName": "closed()",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "Void",
+                "printedName": "()"
+              }
+            ],
+            "declKind": "Func",
+            "usr": "s:10AsgardCore0A7ChatbotC6closedyyF",
+            "mangledName": "$s10AsgardCore0A7ChatbotC6closedyyF",
+            "moduleName": "AsgardCore",
+            "declAttributes": [
+              "Final",
+              "AccessControl",
+              "RawDocComment"
+            ],
+            "funcSelfKind": "NonMutating"
+          },
+          {
+            "kind": "Function",
+            "name": "reset",
+            "printedName": "reset()",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "Void",
+                "printedName": "()"
+              }
+            ],
+            "declKind": "Func",
+            "usr": "s:10AsgardCore0A7ChatbotC5resetyyF",
+            "mangledName": "$s10AsgardCore0A7ChatbotC5resetyyF",
+            "moduleName": "AsgardCore",
+            "declAttributes": [
+              "Final",
+              "AccessControl",
+              "RawDocComment"
+            ],
+            "funcSelfKind": "NonMutating"
+          }
+        ],
+        "declKind": "Class",
+        "usr": "s:10AsgardCore0A7ChatbotC",
+        "mangledName": "$s10AsgardCore0A7ChatbotC",
+        "moduleName": "AsgardCore",
+        "declAttributes": [
+          "Final",
+          "AccessControl"
+        ],
+        "hasMissingDesignatedInitializers": true,
+        "conformances": [
+          {
+            "kind": "Conformance",
+            "name": "Copyable",
+            "printedName": "Copyable",
+            "usr": "s:s8CopyableP",
+            "mangledName": "$ss8CopyableP"
+          },
+          {
+            "kind": "Conformance",
+            "name": "Escapable",
+            "printedName": "Escapable",
+            "usr": "s:s9EscapableP",
+            "mangledName": "$ss9EscapableP"
+          }
+        ]
+      },
+      {
+        "kind": "Import",
+        "name": "Foundation",
+        "printedName": "Foundation",
+        "declKind": "Import",
+        "moduleName": "AsgardCore"
+      },
+      {
+        "kind": "Import",
+        "name": "Foundation",
+        "printedName": "Foundation",
+        "declKind": "Import",
+        "moduleName": "AsgardCore"
+      },
+      {
+        "kind": "Import",
         "name": "UIKit",
         "printedName": "UIKit",
         "declKind": "Import",
@@ -835,13 +996,6 @@
             "mangledName": "$ss9EscapableP"
           }
         ]
-      },
-      {
-        "kind": "Import",
-        "name": "Foundation",
-        "printedName": "Foundation",
-        "declKind": "Import",
-        "moduleName": "AsgardCore"
       },
       {
         "kind": "Import",
@@ -2826,6 +2980,13 @@
       },
       {
         "kind": "Import",
+        "name": "UIKit",
+        "printedName": "UIKit",
+        "declKind": "Import",
+        "moduleName": "AsgardCore"
+      },
+      {
+        "kind": "Import",
         "name": "Foundation",
         "printedName": "Foundation",
         "declKind": "Import",
@@ -3787,6 +3948,20 @@
       },
       {
         "kind": "Import",
+        "name": "Speech",
+        "printedName": "Speech",
+        "declKind": "Import",
+        "moduleName": "AsgardCore"
+      },
+      {
+        "kind": "Import",
+        "name": "Combine",
+        "printedName": "Combine",
+        "declKind": "Import",
+        "moduleName": "AsgardCore"
+      },
+      {
+        "kind": "Import",
         "name": "UIKit",
         "printedName": "UIKit",
         "declKind": "Import",
@@ -3794,8 +3969,8 @@
       },
       {
         "kind": "Import",
-        "name": "Speech",
-        "printedName": "Speech",
+        "name": "UIKit",
+        "printedName": "UIKit",
         "declKind": "Import",
         "moduleName": "AsgardCore"
       },
@@ -4296,13 +4471,6 @@
       },
       {
         "kind": "Import",
-        "name": "UIKit",
-        "printedName": "UIKit",
-        "declKind": "Import",
-        "moduleName": "AsgardCore"
-      },
-      {
-        "kind": "Import",
         "name": "Foundation",
         "printedName": "Foundation",
         "declKind": "Import",
@@ -4576,36 +4744,8 @@
       },
       {
         "kind": "Import",
-        "name": "UIKit",
-        "printedName": "UIKit",
-        "declKind": "Import",
-        "moduleName": "AsgardCore"
-      },
-      {
-        "kind": "Import",
-        "name": "Combine",
-        "printedName": "Combine",
-        "declKind": "Import",
-        "moduleName": "AsgardCore"
-      },
-      {
-        "kind": "Import",
         "name": "Foundation",
         "printedName": "Foundation",
-        "declKind": "Import",
-        "moduleName": "AsgardCore"
-      },
-      {
-        "kind": "Import",
-        "name": "UIKit",
-        "printedName": "UIKit",
-        "declKind": "Import",
-        "moduleName": "AsgardCore"
-      },
-      {
-        "kind": "Import",
-        "name": "Combine",
-        "printedName": "Combine",
         "declKind": "Import",
         "moduleName": "AsgardCore"
       },
@@ -4793,8 +4933,8 @@
       },
       {
         "kind": "Import",
-        "name": "Foundation",
-        "printedName": "Foundation",
+        "name": "UIKit",
+        "printedName": "UIKit",
         "declKind": "Import",
         "moduleName": "AsgardCore"
       },
@@ -4804,146 +4944,6 @@
         "printedName": "Combine",
         "declKind": "Import",
         "moduleName": "AsgardCore"
-      },
-      {
-        "kind": "TypeDecl",
-        "name": "AsgardChatbot",
-        "printedName": "AsgardChatbot",
-        "children": [
-          {
-            "kind": "Function",
-            "name": "sendMessage",
-            "printedName": "sendMessage(_:action:customMessageId:)",
-            "children": [
-              {
-                "kind": "TypeNominal",
-                "name": "Void",
-                "printedName": "()"
-              },
-              {
-                "kind": "TypeNominal",
-                "name": "String",
-                "printedName": "Swift.String",
-                "usr": "s:SS"
-              },
-              {
-                "kind": "TypeNominal",
-                "name": "String",
-                "printedName": "Swift.String",
-                "hasDefaultArg": true,
-                "usr": "s:SS"
-              },
-              {
-                "kind": "TypeNominal",
-                "name": "String",
-                "printedName": "Swift.String",
-                "hasDefaultArg": true,
-                "usr": "s:SS"
-              }
-            ],
-            "declKind": "Func",
-            "usr": "s:10AsgardCore0A7ChatbotC11sendMessage_6action06customE2IdySS_S2StF",
-            "mangledName": "$s10AsgardCore0A7ChatbotC11sendMessage_6action06customE2IdySS_S2StF",
-            "moduleName": "AsgardCore",
-            "declAttributes": [
-              "Final",
-              "AccessControl",
-              "RawDocComment"
-            ],
-            "funcSelfKind": "NonMutating"
-          },
-          {
-            "kind": "Function",
-            "name": "start",
-            "printedName": "start()",
-            "children": [
-              {
-                "kind": "TypeNominal",
-                "name": "Void",
-                "printedName": "()"
-              }
-            ],
-            "declKind": "Func",
-            "usr": "s:10AsgardCore0A7ChatbotC5startyyF",
-            "mangledName": "$s10AsgardCore0A7ChatbotC5startyyF",
-            "moduleName": "AsgardCore",
-            "declAttributes": [
-              "Final",
-              "AccessControl",
-              "RawDocComment"
-            ],
-            "funcSelfKind": "NonMutating"
-          },
-          {
-            "kind": "Function",
-            "name": "closed",
-            "printedName": "closed()",
-            "children": [
-              {
-                "kind": "TypeNominal",
-                "name": "Void",
-                "printedName": "()"
-              }
-            ],
-            "declKind": "Func",
-            "usr": "s:10AsgardCore0A7ChatbotC6closedyyF",
-            "mangledName": "$s10AsgardCore0A7ChatbotC6closedyyF",
-            "moduleName": "AsgardCore",
-            "declAttributes": [
-              "Final",
-              "AccessControl",
-              "RawDocComment"
-            ],
-            "funcSelfKind": "NonMutating"
-          },
-          {
-            "kind": "Function",
-            "name": "reset",
-            "printedName": "reset()",
-            "children": [
-              {
-                "kind": "TypeNominal",
-                "name": "Void",
-                "printedName": "()"
-              }
-            ],
-            "declKind": "Func",
-            "usr": "s:10AsgardCore0A7ChatbotC5resetyyF",
-            "mangledName": "$s10AsgardCore0A7ChatbotC5resetyyF",
-            "moduleName": "AsgardCore",
-            "declAttributes": [
-              "Final",
-              "AccessControl",
-              "RawDocComment"
-            ],
-            "funcSelfKind": "NonMutating"
-          }
-        ],
-        "declKind": "Class",
-        "usr": "s:10AsgardCore0A7ChatbotC",
-        "mangledName": "$s10AsgardCore0A7ChatbotC",
-        "moduleName": "AsgardCore",
-        "declAttributes": [
-          "Final",
-          "AccessControl"
-        ],
-        "hasMissingDesignatedInitializers": true,
-        "conformances": [
-          {
-            "kind": "Conformance",
-            "name": "Copyable",
-            "printedName": "Copyable",
-            "usr": "s:s8CopyableP",
-            "mangledName": "$ss8CopyableP"
-          },
-          {
-            "kind": "Conformance",
-            "name": "Escapable",
-            "printedName": "Escapable",
-            "usr": "s:s9EscapableP",
-            "mangledName": "$ss9EscapableP"
-          }
-        ]
       },
       {
         "kind": "Import",
@@ -5329,11 +5329,32 @@
   },
   "ConstValues": [
     {
-      "filePath": "\/Users\/ink\/Desktop\/WorkSpace\/AsgardProject\/asgard-ios-core\/AsgardCore\/Core\/Configs\/AsgardConfig.swift",
+      "filePath": "\/Users\/ink\/Desktop\/WorkSpace\/AsgardProject\/asgard-ios-core\/AsgardCore\/Chatbot\/AsgardChatbot.swift",
       "kind": "BooleanLiteral",
-      "offset": 1110,
+      "offset": 321,
       "length": 5,
       "value": "false"
+    },
+    {
+      "filePath": "\/Users\/ink\/Desktop\/WorkSpace\/AsgardProject\/asgard-ios-core\/AsgardCore\/Chatbot\/AsgardChatbot.swift",
+      "kind": "BooleanLiteral",
+      "offset": 362,
+      "length": 5,
+      "value": "false"
+    },
+    {
+      "filePath": "\/Users\/ink\/Desktop\/WorkSpace\/AsgardProject\/asgard-ios-core\/AsgardCore\/Chatbot\/AsgardChatbot.swift",
+      "kind": "StringLiteral",
+      "offset": 1168,
+      "length": 6,
+      "value": "\"NONE\""
+    },
+    {
+      "filePath": "\/Users\/ink\/Desktop\/WorkSpace\/AsgardProject\/asgard-ios-core\/AsgardCore\/Chatbot\/AsgardChatbot.swift",
+      "kind": "StringLiteral",
+      "offset": 1202,
+      "length": 2,
+      "value": "\"\""
     },
     {
       "filePath": "\/Users\/ink\/Desktop\/WorkSpace\/AsgardProject\/asgard-ios-core\/AsgardCore\/Chatbot\/Models\/ChatbotDataModel.swift",
@@ -5446,6 +5467,13 @@
       "offset": 5095,
       "length": 2,
       "value": "[]"
+    },
+    {
+      "filePath": "\/Users\/ink\/Desktop\/WorkSpace\/AsgardProject\/asgard-ios-core\/AsgardCore\/Core\/Configs\/AsgardConfig.swift",
+      "kind": "BooleanLiteral",
+      "offset": 1110,
+      "length": 5,
+      "value": "false"
     },
     {
       "filePath": "\/Users\/ink\/Desktop\/WorkSpace\/AsgardProject\/asgard-ios-core\/AsgardCore\/Core\/Configs\/AsgardSpeechConfig.swift",
@@ -5742,69 +5770,6 @@
       "value": "false"
     },
     {
-      "filePath": "\/Users\/ink\/Desktop\/WorkSpace\/AsgardProject\/asgard-ios-core\/AsgardCore\/Core\/Utils\/ColorUtils.swift",
-      "kind": "StringLiteral",
-      "offset": 74,
-      "length": 9,
-      "value": "\"#1F1F1F\""
-    },
-    {
-      "filePath": "\/Users\/ink\/Desktop\/WorkSpace\/AsgardProject\/asgard-ios-core\/AsgardCore\/Core\/Utils\/ColorUtils.swift",
-      "kind": "StringLiteral",
-      "offset": 118,
-      "length": 9,
-      "value": "\"#FFFFFF\""
-    },
-    {
-      "filePath": "\/Users\/ink\/Desktop\/WorkSpace\/AsgardProject\/asgard-ios-core\/AsgardCore\/Core\/Utils\/ColorUtils.swift",
-      "kind": "StringLiteral",
-      "offset": 162,
-      "length": 9,
-      "value": "\"#FFFFFF\""
-    },
-    {
-      "filePath": "\/Users\/ink\/Desktop\/WorkSpace\/AsgardProject\/asgard-ios-core\/AsgardCore\/Core\/Utils\/ColorUtils.swift",
-      "kind": "StringLiteral",
-      "offset": 208,
-      "length": 9,
-      "value": "\"#FFFFFF\""
-    },
-    {
-      "filePath": "\/Users\/ink\/Desktop\/WorkSpace\/AsgardProject\/asgard-ios-core\/AsgardCore\/Core\/Utils\/ColorUtils.swift",
-      "kind": "StringLiteral",
-      "offset": 261,
-      "length": 9,
-      "value": "\"#585858\""
-    },
-    {
-      "filePath": "\/Users\/ink\/Desktop\/WorkSpace\/AsgardProject\/asgard-ios-core\/AsgardCore\/Core\/Utils\/ColorUtils.swift",
-      "kind": "StringLiteral",
-      "offset": 315,
-      "length": 9,
-      "value": "\"#FFFFFF\""
-    },
-    {
-      "filePath": "\/Users\/ink\/Desktop\/WorkSpace\/AsgardProject\/asgard-ios-core\/AsgardCore\/Core\/Utils\/ColorUtils.swift",
-      "kind": "StringLiteral",
-      "offset": 369,
-      "length": 9,
-      "value": "\"#4767EB\""
-    },
-    {
-      "filePath": "\/Users\/ink\/Desktop\/WorkSpace\/AsgardProject\/asgard-ios-core\/AsgardCore\/Core\/Utils\/ColorUtils.swift",
-      "kind": "StringLiteral",
-      "offset": 424,
-      "length": 9,
-      "value": "\"#FFFFFF\""
-    },
-    {
-      "filePath": "\/Users\/ink\/Desktop\/WorkSpace\/AsgardProject\/asgard-ios-core\/AsgardCore\/Core\/Utils\/ColorUtils.swift",
-      "kind": "StringLiteral",
-      "offset": 473,
-      "length": 9,
-      "value": "\"#585858\""
-    },
-    {
       "filePath": "\/Users\/ink\/Desktop\/WorkSpace\/AsgardProject\/asgard-ios-core\/AsgardCore\/Chatbot\/UI\/Components\/TypingIndicatorView.swift",
       "kind": "IntegerLiteral",
       "offset": 185,
@@ -5824,41 +5789,6 @@
       "offset": 458,
       "length": 8,
       "value": "\"Typing\""
-    },
-    {
-      "filePath": "\/Users\/ink\/Desktop\/WorkSpace\/AsgardProject\/asgard-ios-core\/AsgardCore\/Core\/Utils\/Log.swift",
-      "kind": "IntegerLiteral",
-      "offset": 83,
-      "length": 7,
-      "value": "1"
-    },
-    {
-      "filePath": "\/Users\/ink\/Desktop\/WorkSpace\/AsgardProject\/asgard-ios-core\/AsgardCore\/Core\/Utils\/Log.swift",
-      "kind": "IntegerLiteral",
-      "offset": 100,
-      "length": 4,
-      "value": "2"
-    },
-    {
-      "filePath": "\/Users\/ink\/Desktop\/WorkSpace\/AsgardProject\/asgard-ios-core\/AsgardCore\/Core\/Utils\/Log.swift",
-      "kind": "IntegerLiteral",
-      "offset": 114,
-      "length": 5,
-      "value": "3"
-    },
-    {
-      "filePath": "\/Users\/ink\/Desktop\/WorkSpace\/AsgardProject\/asgard-ios-core\/AsgardCore\/Core\/Utils\/Log.swift",
-      "kind": "IntegerLiteral",
-      "offset": 233,
-      "length": 6,
-      "value": "1"
-    },
-    {
-      "filePath": "\/Users\/ink\/Desktop\/WorkSpace\/AsgardProject\/asgard-ios-core\/AsgardCore\/Core\/Utils\/Log.swift",
-      "kind": "IntegerLiteral",
-      "offset": 279,
-      "length": 4,
-      "value": "2"
     },
     {
       "filePath": "\/Users\/ink\/Desktop\/WorkSpace\/AsgardProject\/asgard-ios-core\/AsgardCore\/Chatbot\/UI\/AsgardChatbotVC.swift",
@@ -6183,6 +6113,104 @@
       "value": "0"
     },
     {
+      "filePath": "\/Users\/ink\/Desktop\/WorkSpace\/AsgardProject\/asgard-ios-core\/AsgardCore\/Core\/Utils\/ColorUtils.swift",
+      "kind": "StringLiteral",
+      "offset": 74,
+      "length": 9,
+      "value": "\"#1F1F1F\""
+    },
+    {
+      "filePath": "\/Users\/ink\/Desktop\/WorkSpace\/AsgardProject\/asgard-ios-core\/AsgardCore\/Core\/Utils\/ColorUtils.swift",
+      "kind": "StringLiteral",
+      "offset": 118,
+      "length": 9,
+      "value": "\"#FFFFFF\""
+    },
+    {
+      "filePath": "\/Users\/ink\/Desktop\/WorkSpace\/AsgardProject\/asgard-ios-core\/AsgardCore\/Core\/Utils\/ColorUtils.swift",
+      "kind": "StringLiteral",
+      "offset": 162,
+      "length": 9,
+      "value": "\"#FFFFFF\""
+    },
+    {
+      "filePath": "\/Users\/ink\/Desktop\/WorkSpace\/AsgardProject\/asgard-ios-core\/AsgardCore\/Core\/Utils\/ColorUtils.swift",
+      "kind": "StringLiteral",
+      "offset": 208,
+      "length": 9,
+      "value": "\"#FFFFFF\""
+    },
+    {
+      "filePath": "\/Users\/ink\/Desktop\/WorkSpace\/AsgardProject\/asgard-ios-core\/AsgardCore\/Core\/Utils\/ColorUtils.swift",
+      "kind": "StringLiteral",
+      "offset": 261,
+      "length": 9,
+      "value": "\"#585858\""
+    },
+    {
+      "filePath": "\/Users\/ink\/Desktop\/WorkSpace\/AsgardProject\/asgard-ios-core\/AsgardCore\/Core\/Utils\/ColorUtils.swift",
+      "kind": "StringLiteral",
+      "offset": 315,
+      "length": 9,
+      "value": "\"#FFFFFF\""
+    },
+    {
+      "filePath": "\/Users\/ink\/Desktop\/WorkSpace\/AsgardProject\/asgard-ios-core\/AsgardCore\/Core\/Utils\/ColorUtils.swift",
+      "kind": "StringLiteral",
+      "offset": 369,
+      "length": 9,
+      "value": "\"#4767EB\""
+    },
+    {
+      "filePath": "\/Users\/ink\/Desktop\/WorkSpace\/AsgardProject\/asgard-ios-core\/AsgardCore\/Core\/Utils\/ColorUtils.swift",
+      "kind": "StringLiteral",
+      "offset": 424,
+      "length": 9,
+      "value": "\"#FFFFFF\""
+    },
+    {
+      "filePath": "\/Users\/ink\/Desktop\/WorkSpace\/AsgardProject\/asgard-ios-core\/AsgardCore\/Core\/Utils\/ColorUtils.swift",
+      "kind": "StringLiteral",
+      "offset": 473,
+      "length": 9,
+      "value": "\"#585858\""
+    },
+    {
+      "filePath": "\/Users\/ink\/Desktop\/WorkSpace\/AsgardProject\/asgard-ios-core\/AsgardCore\/Core\/Utils\/Log.swift",
+      "kind": "IntegerLiteral",
+      "offset": 83,
+      "length": 7,
+      "value": "1"
+    },
+    {
+      "filePath": "\/Users\/ink\/Desktop\/WorkSpace\/AsgardProject\/asgard-ios-core\/AsgardCore\/Core\/Utils\/Log.swift",
+      "kind": "IntegerLiteral",
+      "offset": 100,
+      "length": 4,
+      "value": "2"
+    },
+    {
+      "filePath": "\/Users\/ink\/Desktop\/WorkSpace\/AsgardProject\/asgard-ios-core\/AsgardCore\/Core\/Utils\/Log.swift",
+      "kind": "IntegerLiteral",
+      "offset": 114,
+      "length": 5,
+      "value": "3"
+    },
+    {
+      "filePath": "\/Users\/ink\/Desktop\/WorkSpace\/AsgardProject\/asgard-ios-core\/AsgardCore\/Core\/Utils\/Log.swift",
+      "kind": "IntegerLiteral",
+      "offset": 233,
+      "length": 6,
+      "value": "1"
+    },
+    {
+      "filePath": "\/Users\/ink\/Desktop\/WorkSpace\/AsgardProject\/asgard-ios-core\/AsgardCore\/Core\/Utils\/Log.swift",
+      "kind": "IntegerLiteral",
+      "offset": 279,
+      "length": 4,
+      "value": "2"
+    },
+    {
       "filePath": "\/Users\/ink\/Desktop\/WorkSpace\/AsgardProject\/asgard-ios-core\/AsgardCore\/Core\/Utils\/LogManager.swift",
       "kind": "StringLiteral",
       "offset": 120,
@@ -6263,34 +6291,6 @@
       "filePath": "\/Users\/ink\/Desktop\/WorkSpace\/AsgardProject\/asgard-ios-core\/AsgardCore\/Chatbot\/UI\/AsgardChatbotViewModel.swift",
       "kind": "StringLiteral",
       "offset": 479,
-      "length": 2,
-      "value": "\"\""
-    },
-    {
-      "filePath": "\/Users\/ink\/Desktop\/WorkSpace\/AsgardProject\/asgard-ios-core\/AsgardCore\/Chatbot\/AsgardChatbot.swift",
-      "kind": "BooleanLiteral",
-      "offset": 321,
-      "length": 5,
-      "value": "false"
-    },
-    {
-      "filePath": "\/Users\/ink\/Desktop\/WorkSpace\/AsgardProject\/asgard-ios-core\/AsgardCore\/Chatbot\/AsgardChatbot.swift",
-      "kind": "BooleanLiteral",
-      "offset": 362,
-      "length": 5,
-      "value": "false"
-    },
-    {
-      "filePath": "\/Users\/ink\/Desktop\/WorkSpace\/AsgardProject\/asgard-ios-core\/AsgardCore\/Chatbot\/AsgardChatbot.swift",
-      "kind": "StringLiteral",
-      "offset": 1168,
-      "length": 6,
-      "value": "\"NONE\""
-    },
-    {
-      "filePath": "\/Users\/ink\/Desktop\/WorkSpace\/AsgardProject\/asgard-ios-core\/AsgardCore\/Chatbot\/AsgardChatbot.swift",
-      "kind": "StringLiteral",
-      "offset": 1202,
       "length": 2,
       "value": "\"\""
     },

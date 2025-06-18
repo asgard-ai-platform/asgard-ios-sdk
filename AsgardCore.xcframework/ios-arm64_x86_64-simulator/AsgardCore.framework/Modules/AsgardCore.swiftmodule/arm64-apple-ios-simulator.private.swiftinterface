@@ -10,6 +10,28 @@ import UIKit
 import _Concurrency
 import _StringProcessing
 import _SwiftConcurrencyShims
+public enum AsgardColor {
+  public static let theme: UIKit.UIColor
+  public static let text: UIKit.UIColor
+  public static let tint: UIKit.UIColor
+  public static let border: UIKit.UIColor
+  public static let botMessageBox: UIKit.UIColor
+  public static let botMessageText: UIKit.UIColor
+  public static let userMessageBox: UIKit.UIColor
+  public static let userMessageText: UIKit.UIColor
+  public static let timerText: UIKit.UIColor
+  public static func hex(_ hex: Swift.String) -> UIKit.UIColor
+}
+@objc public enum ALogDisplayLevel : Swift.Int {
+  case none
+  case normal
+  case full
+  public init?(rawValue: Swift.Int)
+  public typealias RawValue = Swift.Int
+  public var rawValue: Swift.Int {
+    get
+  }
+}
 @_hasMissingDesignatedInitializers final public class Asgard {
   public static func getVersion() -> Swift.String
   public static func getChatbot(config: AsgardCore.AsgardConfig) -> AsgardCore.AsgardChatbot
@@ -95,28 +117,6 @@ public struct AsgardUIConfig {
   public let onUIClose: (() -> Swift.Void)?
   public init(title: Swift.String? = nil, avatar: Swift.String? = nil, debugMode: Swift.Bool? = nil, inputPlaceholder: Swift.String, botTypingPlaceholder: Swift.String? = nil, theme: AsgardCore.AsgardThemeConfig = AsgardThemeConfig(), initMessages: [Swift.String]? = nil, connectionErrorMessage: Swift.String, speechRecognition: AsgardCore.AsgardSpeechConfig? = nil, onUIReset: (() -> Swift.Void)? = nil, onUIClose: (() -> Swift.Void)? = nil)
   public static var `default`: AsgardCore.AsgardUIConfig {
-    get
-  }
-}
-public enum AsgardColor {
-  public static let theme: UIKit.UIColor
-  public static let text: UIKit.UIColor
-  public static let tint: UIKit.UIColor
-  public static let border: UIKit.UIColor
-  public static let botMessageBox: UIKit.UIColor
-  public static let botMessageText: UIKit.UIColor
-  public static let userMessageBox: UIKit.UIColor
-  public static let userMessageText: UIKit.UIColor
-  public static let timerText: UIKit.UIColor
-  public static func hex(_ hex: Swift.String) -> UIKit.UIColor
-}
-@objc public enum ALogDisplayLevel : Swift.Int {
-  case none
-  case normal
-  case full
-  public init?(rawValue: Swift.Int)
-  public typealias RawValue = Swift.Int
-  public var rawValue: Swift.Int {
     get
   }
 }

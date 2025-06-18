@@ -10,6 +10,13 @@ import UIKit
 import _Concurrency
 import _StringProcessing
 import _SwiftConcurrencyShims
+@_hasMissingDesignatedInitializers final public class AsgardChatbot {
+  final public func sendMessage(_ text: Swift.String, action: Swift.String = "NONE", customMessageId: Swift.String = "")
+  final public func start()
+  final public func closed()
+  final public func reset()
+  @objc deinit
+}
 public struct AsgardConfig {
   public let apiKey: Swift.String
   public let endpoint: Swift.String
@@ -102,13 +109,6 @@ public enum AsgardColor {
   public static func getChatbot(config: AsgardCore.AsgardConfig) -> AsgardCore.AsgardChatbot
   public static func pushChatbot(config: AsgardCore.AsgardConfig, uiConfig: AsgardCore.AsgardUIConfig, from viewController: UIKit.UIViewController)
   public static func presentChatbot(config: AsgardCore.AsgardConfig, uiConfig: AsgardCore.AsgardUIConfig, from viewController: UIKit.UIViewController)
-  @objc deinit
-}
-@_hasMissingDesignatedInitializers final public class AsgardChatbot {
-  final public func sendMessage(_ text: Swift.String, action: Swift.String = "NONE", customMessageId: Swift.String = "")
-  final public func start()
-  final public func closed()
-  final public func reset()
   @objc deinit
 }
 public enum AsgardError : Swift.Error {
