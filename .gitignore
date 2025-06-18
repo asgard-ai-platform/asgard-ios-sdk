@@ -23,6 +23,7 @@ Build
 # CocoaPods
 Pods/
 *.xcworkspace
+*.lock
 !default.xcworkspace
 
 # Carthage
