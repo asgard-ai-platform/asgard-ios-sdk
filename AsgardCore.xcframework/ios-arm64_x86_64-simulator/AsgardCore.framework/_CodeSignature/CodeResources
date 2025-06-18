@@ -10,43 +10,43 @@
 		</data>
 		<key>Modules/AsgardCore.swiftmodule/arm64-apple-ios-simulator.abi.json</key>
 		<data>
-		gZT6O3GZO94GFiWeVZUxwX52wZc=
+		bZ7GaCaLkx3cCiJKGhE+RCi/KlE=
 		</data>
 		<key>Modules/AsgardCore.swiftmodule/arm64-apple-ios-simulator.private.swiftinterface</key>
 		<data>
-		wgbEWVYrm1hLBZ1w3EL9SJytLjQ=
+		PF2D04nOHqnIQ9N+l2e8BMtBQ5A=
 		</data>
 		<key>Modules/AsgardCore.swiftmodule/arm64-apple-ios-simulator.swiftdoc</key>
 		<data>
-		+A4DgVgxa05zGyhlPKnLOsMkliY=
+		LYl0Sza3g+wTWcKL2mzZWU+yowk=
 		</data>
 		<key>Modules/AsgardCore.swiftmodule/arm64-apple-ios-simulator.swiftinterface</key>
 		<data>
-		wgbEWVYrm1hLBZ1w3EL9SJytLjQ=
+		PF2D04nOHqnIQ9N+l2e8BMtBQ5A=
 		</data>
 		<key>Modules/AsgardCore.swiftmodule/arm64-apple-ios-simulator.swiftmodule</key>
 		<data>
-		tWP5WcAMPukTeIpZC4/S5iRI8tk=
+		7fVu51s71ho+zM7O5w1rUoEvf+M=
 		</data>
 		<key>Modules/AsgardCore.swiftmodule/x86_64-apple-ios-simulator.abi.json</key>
 		<data>
-		gZT6O3GZO94GFiWeVZUxwX52wZc=
+		bZ7GaCaLkx3cCiJKGhE+RCi/KlE=
 		</data>
 		<key>Modules/AsgardCore.swiftmodule/x86_64-apple-ios-simulator.private.swiftinterface</key>
 		<data>
-		gJvDF8xu0E4wqL5vwO9ihWdc9VY=
+		HZZqCf7NFPjwy7QvRdPgL8Nh5tQ=
 		</data>
 		<key>Modules/AsgardCore.swiftmodule/x86_64-apple-ios-simulator.swiftdoc</key>
 		<data>
-		aJEDPcH5BjklTXl7vhZs9vutmxY=
+		ZxivaJNAA1ertUbDJARQNPWeQLc=
 		</data>
 		<key>Modules/AsgardCore.swiftmodule/x86_64-apple-ios-simulator.swiftinterface</key>
 		<data>
-		gJvDF8xu0E4wqL5vwO9ihWdc9VY=
+		HZZqCf7NFPjwy7QvRdPgL8Nh5tQ=
 		</data>
 		<key>Modules/AsgardCore.swiftmodule/x86_64-apple-ios-simulator.swiftmodule</key>
 		<data>
-		XvNt7piSp7LvMk7WFBWar3R+YvY=
+		qjSOEJ7lNvP6BRBs3jLOzl4QDxQ=
 		</data>
 	</dict>
 	<key>files2</key>
@@ -55,70 +55,70 @@
 		<dict>
 			<key>hash2</key>
 			<data>
-			LG32UXxGYpoBX8yD+G/Nd/5dcKznaVJJpKsxnZbcPQ0=
+			Gg9Y/qykBVRWkjLw3lZXzC25KwTlX2Zr/jeXBsHrbjQ=
 			</data>
 		</dict>
 		<key>Modules/AsgardCore.swiftmodule/arm64-apple-ios-simulator.private.swiftinterface</key>
 		<dict>
 			<key>hash2</key>
 			<data>
-			JxeaTKK21dIF2DDJWzjVe2nFbj7kmsZqkQKL7+5qtrA=
+			U9m4+prn3/iPD/HhU9JV/te39bYhSXjUwYQ+MTyZta4=
 			</data>
 		</dict>
 		<key>Modules/AsgardCore.swiftmodule/arm64-apple-ios-simulator.swiftdoc</key>
 		<dict>
 			<key>hash2</key>
 			<data>
-			VuBysbpdHgfcjxjTvzElm5KnlGgWVHvhk8ZnQOpxqNI=
+			Zsx6Wyl5gapHq1ZU45yHedRW7wj+G/mHGFYBbTuiexc=
 			</data>
 		</dict>
 		<key>Modules/AsgardCore.swiftmodule/arm64-apple-ios-simulator.swiftinterface</key>
 		<dict>
 			<key>hash2</key>
 			<data>
-			JxeaTKK21dIF2DDJWzjVe2nFbj7kmsZqkQKL7+5qtrA=
+			U9m4+prn3/iPD/HhU9JV/te39bYhSXjUwYQ+MTyZta4=
 			</data>
 		</dict>
 		<key>Modules/AsgardCore.swiftmodule/arm64-apple-ios-simulator.swiftmodule</key>
 		<dict>
 			<key>hash2</key>
 			<data>
-			VnsTg2EtyV5eUT4rIp6LZkPDJyHpr5bMQFt9Wd4hU6I=
+			LVfRCamRuhGALIs1Dv7c49v7ETvoY8MSMmq9xihCxFI=
 			</data>
 		</dict>
 		<key>Modules/AsgardCore.swiftmodule/x86_64-apple-ios-simulator.abi.json</key>
 		<dict>
 			<key>hash2</key>
 			<data>
-			LG32UXxGYpoBX8yD+G/Nd/5dcKznaVJJpKsxnZbcPQ0=
+			Gg9Y/qykBVRWkjLw3lZXzC25KwTlX2Zr/jeXBsHrbjQ=
 			</data>
 		</dict>
 		<key>Modules/AsgardCore.swiftmodule/x86_64-apple-ios-simulator.private.swiftinterface</key>
 		<dict>
 			<key>hash2</key>
 			<data>
-			V1PViDjm5mRCHVN6hhgMWvE5BIwABkb/QCSiKYs2nsY=
+			zzWOvgpVLx6V6gK0zmPJS7JCzToc4L/PuZUJOFReSsY=
 			</data>
 		</dict>
 		<key>Modules/AsgardCore.swiftmodule/x86_64-apple-ios-simulator.swiftdoc</key>
 		<dict>
 			<key>hash2</key>
 			<data>
-			xyKLwic4uFowBWUgDr+pjEC2vY7EpQH3cqyFkVpptq4=
+			Dh8cpaIMGiid/GF0QbJOB5U46VDeHf8SR/gqZYiXVQw=
 			</data>
 		</dict>
 		<key>Modules/AsgardCore.swiftmodule/x86_64-apple-ios-simulator.swiftinterface</key>
 		<dict>
 			<key>hash2</key>
 			<data>
-			V1PViDjm5mRCHVN6hhgMWvE5BIwABkb/QCSiKYs2nsY=
+			zzWOvgpVLx6V6gK0zmPJS7JCzToc4L/PuZUJOFReSsY=
 			</data>
 		</dict>
 		<key>Modules/AsgardCore.swiftmodule/x86_64-apple-ios-simulator.swiftmodule</key>
 		<dict>
 			<key>hash2</key>
 			<data>
-			BFUETqVbSXxdSwH//xEe0mDolF39xVRMNAv0sgP5i6I=
+			dWzKOqgf055GEomL1MK81bmLNXzou29mOGqE2ZtEisM=
 			</data>
 		</dict>
 	</dict>

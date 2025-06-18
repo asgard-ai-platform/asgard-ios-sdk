@@ -9,7 +9,7 @@ import SwiftUI
 import AsgardCore
 
 struct CustomChatView: View {
-        // Configuration fields
+    // Configuration fields
     @State private var apiKey: String = "YOUR-API-KEY"
     @State private var endpoint: String = "YOUR-ENDPOINT-URL"
     @State private var botProviderEndpoint: String = "YOUR-BOT-PROVIDER-ENDPOINT"
@@ -84,20 +84,22 @@ struct CustomChatView: View {
         // Clear old logs
         logs = ""
         
-        let chatConfig = AsgardChatbotConfig(
+        let chatConfig = AsgardConfig(
             apiKey: apiKey,
             endpoint: endpoint,
             botProviderEndpoint: botProviderEndpoint,
+            customChannelId: "1",
+            isShowDebugLogs: true,
+            transformSsePayload: { raw in
+                DispatchQueue.main.async {
+                    self.logs = "\(raw)\n\(self.logs)"
+                }
+            },
             onExecutionError: { error in
                 DispatchQueue.main.async {
                     print("Error occurred: \(error.localizedDescription)")
                     self.errorMessage = error.localizedDescription
                     self.isLoading = false
-                }
-            },
-            transformSsePayload: { raw in
-                DispatchQueue.main.async {
-                    self.logs = "\(raw)\n\(self.logs)"
                 }
             },
             onReset: {
@@ -113,7 +115,6 @@ struct CustomChatView: View {
                 }
             }
         )
-        Asgard.setLogLevel(.full)
         chatbot = Asgard.getChatbot(config: chatConfig)
         chatbot?.start()
         
@@ -136,7 +137,7 @@ struct CustomChatView: View {
     }
 }
 
-#Preview {
-    CustomChatView()
-}
+//#Preview {
+//    CustomChatView()
+//}
 

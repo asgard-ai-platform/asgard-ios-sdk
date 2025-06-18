@@ -6,13 +6,22 @@
 	objectVersion = 77;
 	objects = {
 
+/* Begin PBXBuildFile section */
+		253C7C457D0F02251E33C7B2 /* Pods_Demo.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = CE677BAB8D18AAC45B010E36 /* Pods_Demo.framework */; };
+/* End PBXBuildFile section */
+
 /* Begin PBXFileReference section */
+		5EA3FD5FD58AE83DAC2FA175 /* Pods-Demo.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Demo.release.xcconfig"; path = "Target Support Files/Pods-Demo/Pods-Demo.release.xcconfig"; sourceTree = "<group>"; };
 		81F61B322DD35078009D69B0 /* Demo.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Demo.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		A6A65D0D1221F1B0F288FE9F /* Pods-Demo.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Demo.debug.xcconfig"; path = "Target Support Files/Pods-Demo/Pods-Demo.debug.xcconfig"; sourceTree = "<group>"; };
+		CE677BAB8D18AAC45B010E36 /* Pods_Demo.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_Demo.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 /* End PBXFileReference section */
 
 /* Begin PBXFileSystemSynchronizedRootGroup section */
 		81F61B342DD35078009D69B0 /* Demo */ = {
 			isa = PBXFileSystemSynchronizedRootGroup;
+			exceptions = (
+			);
 			path = Demo;
 			sourceTree = "<group>";
 		};
@@ -23,17 +32,28 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				253C7C457D0F02251E33C7B2 /* Pods_Demo.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		76133D0B0269E256F7DC9C06 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				CE677BAB8D18AAC45B010E36 /* Pods_Demo.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
 		81F61B292DD35078009D69B0 = {
 			isa = PBXGroup;
 			children = (
 				81F61B342DD35078009D69B0 /* Demo */,
 				81F61B332DD35078009D69B0 /* Products */,
+				FDFC69031E114F31CB36AFCF /* Pods */,
+				76133D0B0269E256F7DC9C06 /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -43,6 +63,16 @@
 				81F61B322DD35078009D69B0 /* Demo.app */,
 			);
 			name = Products;
+			sourceTree = "<group>";
+		};
+		FDFC69031E114F31CB36AFCF /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				A6A65D0D1221F1B0F288FE9F /* Pods-Demo.debug.xcconfig */,
+				5EA3FD5FD58AE83DAC2FA175 /* Pods-Demo.release.xcconfig */,
+			);
+			name = Pods;
+			path = Pods;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -145,13 +175,9 @@
 			inputFileListPaths = (
 				"${PODS_ROOT}/Target Support Files/Pods-Demo/Pods-Demo-frameworks-${CONFIGURATION}-input-files.xcfilelist",
 			);
-			inputPaths = (
-			);
 			name = "[CP] Embed Pods Frameworks";
 			outputFileListPaths = (
 				"${PODS_ROOT}/Target Support Files/Pods-Demo/Pods-Demo-frameworks-${CONFIGURATION}-output-files.xcfilelist",
-			);
-			outputPaths = (
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 			shellPath = /bin/sh;
@@ -289,6 +315,7 @@
 		};
 		81F61B3F2DD35079009D69B0 /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = A6A65D0D1221F1B0F288FE9F /* Pods-Demo.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
@@ -331,6 +358,7 @@
 		};
 		81F61B402DD35079009D69B0 /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 5EA3FD5FD58AE83DAC2FA175 /* Pods-Demo.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
