@@ -1,59 +1,27 @@
 // swift-interface-format-version: 1.0
-// swift-compiler-version: Apple Swift version 6.1 effective-5.10 (swiftlang-6.1.0.110.21 clang-1700.0.13.3)
+// swift-compiler-version: Apple Swift version 6.2 effective-5.10 (swiftlang-6.2.0.19.9 clang-1700.3.19.1)
 // swift-module-flags: -target x86_64-apple-ios13.0-simulator -enable-objc-interop -enable-library-evolution -swift-version 5 -enforce-exclusivity=checked -O -enable-experimental-feature DebugDescriptionMacro -enable-bare-slash-regex -module-name AsgardCore
-// swift-module-flags-ignorable:  -interface-compiler-version 6.1
+// swift-module-flags-ignorable:  -formal-cxx-interoperability-mode=off -interface-compiler-version 6.2
+import AVFoundation
+import AVKit
 import Combine
 import Foundation
+import MapKit
+import MediaPlayer
+import SDWebImage
 import Speech
 import Swift
 import UIKit
+import WebKit
 import _Concurrency
 import _StringProcessing
 import _SwiftConcurrencyShims
-public enum AsgardColor {
-  public static let theme: UIKit.UIColor
-  public static let text: UIKit.UIColor
-  public static let tint: UIKit.UIColor
-  public static let border: UIKit.UIColor
-  public static let botMessageBox: UIKit.UIColor
-  public static let botMessageText: UIKit.UIColor
-  public static let userMessageBox: UIKit.UIColor
-  public static let userMessageText: UIKit.UIColor
-  public static let timerText: UIKit.UIColor
-  public static func hex(_ hex: Swift.String) -> UIKit.UIColor
-}
-@objc public enum ALogDisplayLevel : Swift.Int {
-  case none
-  case normal
-  case full
-  public init?(rawValue: Swift.Int)
-  public typealias RawValue = Swift.Int
-  public var rawValue: Swift.Int {
-    get
-  }
-}
-@_hasMissingDesignatedInitializers final public class Asgard {
-  public static func getVersion() -> Swift.String
-  public static func getChatbot(config: AsgardCore.AsgardConfig) -> AsgardCore.AsgardChatbot
-  public static func pushChatbot(config: AsgardCore.AsgardConfig, uiConfig: AsgardCore.AsgardUIConfig, from viewController: UIKit.UIViewController)
-  public static func presentChatbot(config: AsgardCore.AsgardConfig, uiConfig: AsgardCore.AsgardUIConfig, from viewController: UIKit.UIViewController)
-  @objc deinit
-}
 @_hasMissingDesignatedInitializers final public class AsgardChatbot {
   final public func sendMessage(_ text: Swift.String, action: Swift.String = "NONE", customMessageId: Swift.String = "")
   final public func start()
   final public func closed()
   final public func reset()
   @objc deinit
-}
-public enum AsgardError : Swift.Error {
-  case notInitialized
-  case invalidApiKey
-  case invalidEndpoint
-  case invalidBotProviderEndpoint
-  case serviceError(Swift.String)
-  case invalidResponse
-  case invalidURL
 }
 public struct AsgardConfig {
   public let apiKey: Swift.String
@@ -65,7 +33,9 @@ public struct AsgardConfig {
   public let onExecutionError: ((any Swift.Error) -> Swift.Void)?
   public var onReset: (() -> Swift.Void)?
   public let onClose: (() -> Swift.Void)?
+  #if compiler(>=5.3) && $NonescapableTypes
   public init(apiKey: Swift.String, endpoint: Swift.String, botProviderEndpoint: Swift.String, customChannelId: Swift.String, isShowDebugLogs: Swift.Bool = false, transformSsePayload: ((Swift.String) -> Swift.Void)? = nil, onExecutionError: ((any Swift.Error) -> Swift.Void)? = nil, onReset: (() -> Swift.Void)? = nil, onClose: (() -> Swift.Void)? = nil)
+  #endif
 }
 public struct AsgardSpeechConfig {
   public struct Text {
@@ -91,23 +61,28 @@ public struct AsgardThemeConfig {
   public init(chatbot: AsgardCore.AsgardChatbotStyle = AsgardChatbotStyle(), botMessage: AsgardCore.AsgardMessageStyle = AsgardMessageStyle(), userMessage: AsgardCore.AsgardMessageStyle = AsgardMessageStyle())
 }
 public struct AsgardChatbotStyle {
-  public let themeColor: UIKit.UIColor?
-  public let textColor: UIKit.UIColor?
-  public let tintColor: UIKit.UIColor?
+  public let backgroundColor: UIKit.UIColor?
   public let borderColor: UIKit.UIColor?
-  public init(themeColor: UIKit.UIColor? = nil, textColor: UIKit.UIColor? = nil, tintColor: UIKit.UIColor? = nil, borderColor: UIKit.UIColor? = nil)
+  public let inactiveColor: UIKit.UIColor?
+  public let primaryMainColor: UIKit.UIColor?
+  public let primarySecondaryColor: UIKit.UIColor?
+  #if compiler(>=5.3) && $NonescapableTypes
+  public init(backgroundColor: UIKit.UIColor? = nil, borderColor: UIKit.UIColor? = nil, inactiveColor: UIKit.UIColor? = nil, primaryMainColor: UIKit.UIColor? = nil, primarySecondaryColor: UIKit.UIColor? = nil)
+  #endif
 }
 public struct AsgardMessageStyle {
   public let backgroundColor: UIKit.UIColor?
   public let textColor: UIKit.UIColor?
-  public let timerColor: UIKit.UIColor?
-  public init(backgroundColor: UIKit.UIColor? = nil, textColor: UIKit.UIColor? = nil, timerColor: UIKit.UIColor? = nil)
+  public let carouselButtonBackgroundColor: UIKit.UIColor?
+  #if compiler(>=5.3) && $NonescapableTypes
+  public init(backgroundColor: UIKit.UIColor? = nil, textColor: UIKit.UIColor? = nil, carouselButtonBackgroundColor: UIKit.UIColor? = nil)
+  #endif
 }
 public struct AsgardUIConfig {
   public let title: Swift.String?
   public let avatar: Swift.String?
   public let debugMode: Swift.Bool?
-  public let inputPlaceholder: Swift.String
+  public let inputPlaceholder: Swift.String?
   public let botTypingPlaceholder: Swift.String?
   public let theme: AsgardCore.AsgardThemeConfig
   public let initMessages: [Swift.String]?
@@ -115,10 +90,83 @@ public struct AsgardUIConfig {
   public let speechRecognition: AsgardCore.AsgardSpeechConfig?
   public let onUIReset: (() -> Swift.Void)?
   public let onUIClose: (() -> Swift.Void)?
-  public init(title: Swift.String? = nil, avatar: Swift.String? = nil, debugMode: Swift.Bool? = nil, inputPlaceholder: Swift.String, botTypingPlaceholder: Swift.String? = nil, theme: AsgardCore.AsgardThemeConfig = AsgardThemeConfig(), initMessages: [Swift.String]? = nil, connectionErrorMessage: Swift.String, speechRecognition: AsgardCore.AsgardSpeechConfig? = nil, onUIReset: (() -> Swift.Void)? = nil, onUIClose: (() -> Swift.Void)? = nil)
+  public let onActionURI: ((Foundation.URL) -> Swift.Void)?
+  public let onActionEMIT: ((Swift.String, [Swift.String : Swift.AnyHashable]?) -> Swift.Void)?
+  #if compiler(>=5.3) && $NonescapableTypes
+  public init(title: Swift.String? = nil, avatar: Swift.String? = nil, avatarImageName: Swift.String? = nil, debugMode: Swift.Bool? = nil, inputPlaceholder: Swift.String? = nil, botTypingPlaceholder: Swift.String? = nil, theme: AsgardCore.AsgardThemeConfig = AsgardThemeConfig(), initMessages: [Swift.String]? = nil, connectionErrorMessage: Swift.String, speechRecognition: AsgardCore.AsgardSpeechConfig? = nil, onUIReset: (() -> Swift.Void)? = nil, onUIClose: (() -> Swift.Void)? = nil, onActionURI: ((Foundation.URL) -> Swift.Void)? = nil, onActionEMIT: ((Swift.String, [Swift.String : Swift.AnyHashable]?) -> Swift.Void)? = nil)
+  #endif
   public static var `default`: AsgardCore.AsgardUIConfig {
     get
   }
+}
+extension Swift.KeyedDecodingContainer {
+  #if compiler(>=5.3) && $NonescapableTypes
+  public func safeDecodeIfPresent<T>(_ type: T.Type, forKey key: Swift.KeyedDecodingContainer<K>.Key) -> T? where T : Swift.Decodable, T : Swift.Encodable
+  #endif
+  public func safeDecodeWithDefault<T>(_ type: T.Type, forKey key: Swift.KeyedDecodingContainer<K>.Key, defaultValue: T) -> T where T : Swift.Decodable, T : Swift.Encodable
+  public func safeDecodeString(forKey key: Swift.KeyedDecodingContainer<K>.Key) -> Swift.String
+  public func safeDecodeInt(forKey key: Swift.KeyedDecodingContainer<K>.Key) -> Swift.Int
+  public func safeDecodeBool(forKey key: Swift.KeyedDecodingContainer<K>.Key) -> Swift.Bool
+  public func safeDecodeDouble(forKey key: Swift.KeyedDecodingContainer<K>.Key) -> Swift.Double
+}
+extension Swift.KeyedEncodingContainer {
+  #if compiler(>=5.3) && $NonescapableTypes
+  public mutating func encodeIfPresent<T>(_ value: T?, forKey key: Swift.KeyedEncodingContainer<K>.Key) throws where T : Swift.Decodable, T : Swift.Encodable
+  #endif
+}
+public protocol AutoCodable : Swift.Decodable, Swift.Encodable {
+  static func decodeIgnoringUnknownFields(from data: Foundation.Data) throws -> Self
+}
+extension AsgardCore.AutoCodable {
+  public static func decodeIgnoringUnknownFields(from data: Foundation.Data) throws -> Self
+}
+public enum AsgardColor {
+  public static let chatbotBackground: UIKit.UIColor
+  public static let primaryMain: UIKit.UIColor
+  public static let primarySecondary: UIKit.UIColor
+  public static let border: UIKit.UIColor
+  public static let inactive: UIKit.UIColor
+  public static let botMessageBackground: UIKit.UIColor
+  public static let botMessageText: UIKit.UIColor
+  public static let carouselButtonBackground: UIKit.UIColor
+  public static let userMessageBackground: UIKit.UIColor
+  public static let userMessageText: UIKit.UIColor
+  public static func hex(_ hex: Swift.String) -> UIKit.UIColor
+}
+extension UIKit.UIColor {
+  convenience public init(hex: Swift.String)
+  public var isLight: Swift.Bool {
+    get
+  }
+  public func darken(by percentage: CoreFoundation.CGFloat) -> UIKit.UIColor
+}
+@objc public enum ALogDisplayLevel : Swift.Int {
+  case none
+  case normal
+  case full
+  #if compiler(>=5.3) && $NonescapableTypes
+  public init?(rawValue: Swift.Int)
+  #endif
+  public typealias RawValue = Swift.Int
+  public var rawValue: Swift.Int {
+    get
+  }
+}
+@_hasMissingDesignatedInitializers final public class Asgard {
+  public static func getVersion() -> Swift.String
+  public static func getChatbot(config: AsgardCore.AsgardConfig) -> AsgardCore.AsgardChatbot
+  public static func pushChatbot(config: AsgardCore.AsgardConfig, uiConfig: AsgardCore.AsgardUIConfig, from viewController: UIKit.UIViewController)
+  public static func presentChatbot(config: AsgardCore.AsgardConfig, uiConfig: AsgardCore.AsgardUIConfig, from viewController: UIKit.UIViewController)
+  @objc deinit
+}
+public enum AsgardError : Swift.Error {
+  case notInitialized
+  case invalidApiKey
+  case invalidEndpoint
+  case invalidBotProviderEndpoint
+  case serviceError(Swift.String)
+  case invalidResponse
+  case invalidURL
 }
 extension AsgardCore.ALogDisplayLevel : Swift.Equatable {}
 extension AsgardCore.ALogDisplayLevel : Swift.Hashable {}

@@ -6,47 +6,47 @@
 	<dict>
 		<key>Info.plist</key>
 		<data>
-		QJ7WTJuQUxsmdF+4IXUy3qtfJP4=
+		tsflnaLOkP1Ridl+S6gv34gOpdw=
 		</data>
 		<key>Modules/AsgardCore.swiftmodule/arm64-apple-ios-simulator.abi.json</key>
 		<data>
-		D++ZYlxkRjgmpkjdwOxWAyzFr9w=
+		gmMeM/hEDBpvpReO5z0YVjmGV3k=
 		</data>
 		<key>Modules/AsgardCore.swiftmodule/arm64-apple-ios-simulator.private.swiftinterface</key>
 		<data>
-		sAAS7HmSGhEqDOusX5pmRmrNr60=
+		38kY9NkF045PuZgVudZxctY3MK4=
 		</data>
 		<key>Modules/AsgardCore.swiftmodule/arm64-apple-ios-simulator.swiftdoc</key>
 		<data>
-		LqpCWsgORgvRfP+c7XFsxc90AWE=
+		Q0kvLf/RpiXVspC20MMfzehBi5E=
 		</data>
 		<key>Modules/AsgardCore.swiftmodule/arm64-apple-ios-simulator.swiftinterface</key>
 		<data>
-		sAAS7HmSGhEqDOusX5pmRmrNr60=
+		38kY9NkF045PuZgVudZxctY3MK4=
 		</data>
 		<key>Modules/AsgardCore.swiftmodule/arm64-apple-ios-simulator.swiftmodule</key>
 		<data>
-		6eScl21D8V6XENf5RWK0ff7I6AY=
+		YovY1Iv883n7DTeAVSCSkfQIy7I=
 		</data>
 		<key>Modules/AsgardCore.swiftmodule/x86_64-apple-ios-simulator.abi.json</key>
 		<data>
-		D++ZYlxkRjgmpkjdwOxWAyzFr9w=
+		gmMeM/hEDBpvpReO5z0YVjmGV3k=
 		</data>
 		<key>Modules/AsgardCore.swiftmodule/x86_64-apple-ios-simulator.private.swiftinterface</key>
 		<data>
-		AWcidMkXGNB6Qlo2B9lsfPH8B3o=
+		DtmA1d/ds2xGIMN3tinN+u7Arrg=
 		</data>
 		<key>Modules/AsgardCore.swiftmodule/x86_64-apple-ios-simulator.swiftdoc</key>
 		<data>
-		6eb7HrRjAruWkjkVXa12rS926N0=
+		4I7bvpWM76Xsd8jk9tDBUFiQpyQ=
 		</data>
 		<key>Modules/AsgardCore.swiftmodule/x86_64-apple-ios-simulator.swiftinterface</key>
 		<data>
-		AWcidMkXGNB6Qlo2B9lsfPH8B3o=
+		DtmA1d/ds2xGIMN3tinN+u7Arrg=
 		</data>
 		<key>Modules/AsgardCore.swiftmodule/x86_64-apple-ios-simulator.swiftmodule</key>
 		<data>
-		/bv1OaorLu6bRRDD/QrWBFVv198=
+		Ph9pSXyp5PfCxtjGRthPn/Cyy9M=
 		</data>
 	</dict>
 	<key>files2</key>
@@ -55,70 +55,70 @@
 		<dict>
 			<key>hash2</key>
 			<data>
-			V7LGeHDc6fm18FmbBbfIjDVFVb0xl0zFnwdqpzDU7eI=
+			cmfwCh0w/VJw55QsaupeJCDvCq/OQtq1DdrzQo6Z9V0=
 			</data>
 		</dict>
 		<key>Modules/AsgardCore.swiftmodule/arm64-apple-ios-simulator.private.swiftinterface</key>
 		<dict>
 			<key>hash2</key>
 			<data>
-			6fvll16h6FlwxCkqmsKWS31/7JjJKAKCqCODXDRTRuw=
+			63ywDWxgJYu/grJ+qlYCuo8FvL4ozHRUet+ZM5VKZJU=
 			</data>
 		</dict>
 		<key>Modules/AsgardCore.swiftmodule/arm64-apple-ios-simulator.swiftdoc</key>
 		<dict>
 			<key>hash2</key>
 			<data>
-			oyrELNQEPrtvlfvCrkjSWtriDAA7/qEOBbTI43gq85w=
+			BeREM9b/xf/twgb7OfwBuriYij2TCNTsVcWx8jk1eec=
 			</data>
 		</dict>
 		<key>Modules/AsgardCore.swiftmodule/arm64-apple-ios-simulator.swiftinterface</key>
 		<dict>
 			<key>hash2</key>
 			<data>
-			6fvll16h6FlwxCkqmsKWS31/7JjJKAKCqCODXDRTRuw=
+			63ywDWxgJYu/grJ+qlYCuo8FvL4ozHRUet+ZM5VKZJU=
 			</data>
 		</dict>
 		<key>Modules/AsgardCore.swiftmodule/arm64-apple-ios-simulator.swiftmodule</key>
 		<dict>
 			<key>hash2</key>
 			<data>
-			VmT2BP/7R1vSGweBBOMv2t3v21bGH0cTrcoNfz+b25M=
+			v7zRYlwTxeffrQ/NV+rQknSIfoV3rWM01hKjPTAP+r4=
 			</data>
 		</dict>
 		<key>Modules/AsgardCore.swiftmodule/x86_64-apple-ios-simulator.abi.json</key>
 		<dict>
 			<key>hash2</key>
 			<data>
-			V7LGeHDc6fm18FmbBbfIjDVFVb0xl0zFnwdqpzDU7eI=
+			cmfwCh0w/VJw55QsaupeJCDvCq/OQtq1DdrzQo6Z9V0=
 			</data>
 		</dict>
 		<key>Modules/AsgardCore.swiftmodule/x86_64-apple-ios-simulator.private.swiftinterface</key>
 		<dict>
 			<key>hash2</key>
 			<data>
-			96U6hTYg4NnHPD7YIhpnUEsUvgUiyXJCXSY8iqJbklI=
+			18FxnLqNm6zoNLs0oanIdTs0DeuORKBciRIu9NMZy+g=
 			</data>
 		</dict>
 		<key>Modules/AsgardCore.swiftmodule/x86_64-apple-ios-simulator.swiftdoc</key>
 		<dict>
 			<key>hash2</key>
 			<data>
-			3x0tVU7M6ZMFwro5KwXtFNk40RBBCLyMMNd4jeY4rpQ=
+			+9/6oJOOka/tBia6VqeR8hZhk+DIZzlracrU8Qsy8GE=
 			</data>
 		</dict>
 		<key>Modules/AsgardCore.swiftmodule/x86_64-apple-ios-simulator.swiftinterface</key>
 		<dict>
 			<key>hash2</key>
 			<data>
-			96U6hTYg4NnHPD7YIhpnUEsUvgUiyXJCXSY8iqJbklI=
+			18FxnLqNm6zoNLs0oanIdTs0DeuORKBciRIu9NMZy+g=
 			</data>
 		</dict>
 		<key>Modules/AsgardCore.swiftmodule/x86_64-apple-ios-simulator.swiftmodule</key>
 		<dict>
 			<key>hash2</key>
 			<data>
-			TO81EmoZ2aF+bBQhRkB1GDlvM7Erle/WHJ+TEzNHnsk=
+			FePl++Sb07VVZvCJp1fGwaJmgnXg4givlVdqMwc2dFU=
 			</data>
 		</dict>
 	</dict>

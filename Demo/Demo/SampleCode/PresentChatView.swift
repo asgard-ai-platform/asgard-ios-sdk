@@ -2,7 +2,7 @@
 //  PresentChatView.swift
 //  Demo
 //
-//  Created by INK on 2025/6/5.
+//  Created by INK on 2025/10/9.
 //
 
 import SwiftUI
@@ -37,7 +37,11 @@ struct PresentChatView: View {
             isShowDebugLogs: true,
         )
         
-        // 語音設定（選項）
+        /*  語音設定（選項）
+            想開啟語音功能，除了設定 speechRecognitionConfig
+            也必須至 plist 加入語音相關權限
+            不使用可請直接忽略
+        */
         let speechRecognitionConfig = AsgardSpeechConfig(
             text: AsgardSpeechConfig.Text(
                 startSpeaking: "請開始說話",
@@ -53,9 +57,21 @@ struct PresentChatView: View {
         // UI 畫面設定
         let uiConfig = AsgardUIConfig(
             inputPlaceholder: "請輸入訊息...",
-            initMessages: ["歡迎使用 Chatbot","請任意輸入文字"],
             connectionErrorMessage: "網路連線異常，請檢查您的網路設定，或是稍後再試。",
-            speechRecognition: speechRecognitionConfig
+            speechRecognition: speechRecognitionConfig,
+            onUIReset: nil,
+            onUIClose: nil,
+            onActionURI: { url in
+                // 網址事件
+                print("onAction URI: \(url.absoluteString)")
+            },
+            onActionEMIT: { event, payload in
+                // EMIT 事件
+                print("onAction EMIT event: \(event)")
+                if let payload = payload {
+                    print("payload: \(payload)")
+                }
+            }
         )
         
         if let windowScene = UIApplication.shared.connectedScenes.first as? UIWindowScene,
