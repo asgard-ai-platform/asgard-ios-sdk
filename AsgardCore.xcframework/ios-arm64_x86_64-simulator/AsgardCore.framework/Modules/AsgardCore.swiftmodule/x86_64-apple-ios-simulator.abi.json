@@ -48,36 +48,8 @@
       },
       {
         "kind": "Import",
-        "name": "SDWebImage",
-        "printedName": "SDWebImage",
-        "declKind": "Import",
-        "moduleName": "AsgardCore"
-      },
-      {
-        "kind": "Import",
         "name": "UIKit",
         "printedName": "UIKit",
-        "declKind": "Import",
-        "moduleName": "AsgardCore"
-      },
-      {
-        "kind": "Import",
-        "name": "SDWebImage",
-        "printedName": "SDWebImage",
-        "declKind": "Import",
-        "moduleName": "AsgardCore"
-      },
-      {
-        "kind": "Import",
-        "name": "UIKit",
-        "printedName": "UIKit",
-        "declKind": "Import",
-        "moduleName": "AsgardCore"
-      },
-      {
-        "kind": "Import",
-        "name": "SDWebImage",
-        "printedName": "SDWebImage",
         "declKind": "Import",
         "moduleName": "AsgardCore"
       },
@@ -97,8 +69,8 @@
       },
       {
         "kind": "Import",
-        "name": "SDWebImage",
-        "printedName": "SDWebImage",
+        "name": "UIKit",
+        "printedName": "UIKit",
         "declKind": "Import",
         "moduleName": "AsgardCore"
       },
@@ -125,13 +97,6 @@
       },
       {
         "kind": "Import",
-        "name": "SDWebImage",
-        "printedName": "SDWebImage",
-        "declKind": "Import",
-        "moduleName": "AsgardCore"
-      },
-      {
-        "kind": "Import",
         "name": "UIKit",
         "printedName": "UIKit",
         "declKind": "Import",
@@ -153,22 +118,8 @@
       },
       {
         "kind": "Import",
-        "name": "SDWebImage",
-        "printedName": "SDWebImage",
-        "declKind": "Import",
-        "moduleName": "AsgardCore"
-      },
-      {
-        "kind": "Import",
         "name": "UIKit",
         "printedName": "UIKit",
-        "declKind": "Import",
-        "moduleName": "AsgardCore"
-      },
-      {
-        "kind": "Import",
-        "name": "SDWebImage",
-        "printedName": "SDWebImage",
         "declKind": "Import",
         "moduleName": "AsgardCore"
       },
@@ -4644,6 +4595,30 @@
       },
       {
         "kind": "Import",
+        "name": "UIKit",
+        "printedName": "UIKit",
+        "declKind": "Import",
+        "moduleName": "AsgardCore"
+      },
+      {
+        "kind": "Import",
+        "name": "ImageIO",
+        "printedName": "ImageIO",
+        "declKind": "Import",
+        "moduleName": "AsgardCore"
+      },
+      {
+        "kind": "Import",
+        "name": "CommonCrypto",
+        "printedName": "CommonCrypto",
+        "declKind": "Import",
+        "moduleName": "AsgardCore",
+        "declAttributes": [
+          "RawDocComment"
+        ]
+      },
+      {
+        "kind": "Import",
         "name": "Foundation",
         "printedName": "Foundation",
         "declKind": "Import",
@@ -5575,13 +5550,6 @@
         "kind": "Import",
         "name": "UIKit",
         "printedName": "UIKit",
-        "declKind": "Import",
-        "moduleName": "AsgardCore"
-      },
-      {
-        "kind": "Import",
-        "name": "SDWebImage",
-        "printedName": "SDWebImage",
         "declKind": "Import",
         "moduleName": "AsgardCore"
       },
@@ -7031,336 +6999,336 @@
     {
       "filePath": "\/Users\/ink\/Desktop\/WorkSpace\/AsgardProject\/asgard-ios-core\/AsgardCore\/Chatbot\/UI\/Components\/cell\/BaseMessageCell.swift",
       "kind": "IntegerLiteral",
-      "offset": 433,
+      "offset": 415,
       "length": 2,
       "value": "16"
     },
     {
       "filePath": "\/Users\/ink\/Desktop\/WorkSpace\/AsgardProject\/asgard-ios-core\/AsgardCore\/Chatbot\/UI\/Components\/cell\/BaseMessageCell.swift",
       "kind": "BooleanLiteral",
-      "offset": 471,
+      "offset": 453,
       "length": 4,
       "value": "true"
     },
     {
       "filePath": "\/Users\/ink\/Desktop\/WorkSpace\/AsgardProject\/asgard-ios-core\/AsgardCore\/Chatbot\/UI\/Components\/cell\/BaseMessageCell.swift",
       "kind": "IntegerLiteral",
-      "offset": 620,
+      "offset": 602,
       "length": 2,
       "value": "12"
     },
     {
       "filePath": "\/Users\/ink\/Desktop\/WorkSpace\/AsgardProject\/asgard-ios-core\/AsgardCore\/Chatbot\/UI\/Components\/cell\/BaseMessageCell.swift",
       "kind": "IntegerLiteral",
-      "offset": 866,
+      "offset": 848,
       "length": 2,
       "value": "16"
     },
     {
       "filePath": "\/Users\/ink\/Desktop\/WorkSpace\/AsgardProject\/asgard-ios-core\/AsgardCore\/Chatbot\/UI\/Components\/cell\/BaseMessageCell.swift",
       "kind": "BooleanLiteral",
-      "offset": 903,
+      "offset": 885,
       "length": 4,
       "value": "true"
     },
     {
       "filePath": "\/Users\/ink\/Desktop\/WorkSpace\/AsgardProject\/asgard-ios-core\/AsgardCore\/Chatbot\/UI\/Components\/cell\/BaseMessageCell.swift",
       "kind": "BooleanLiteral",
-      "offset": 1112,
+      "offset": 1094,
       "length": 5,
       "value": "false"
     },
     {
       "filePath": "\/Users\/ink\/Desktop\/WorkSpace\/AsgardProject\/asgard-ios-core\/AsgardCore\/Chatbot\/UI\/Components\/cell\/BaseMessageCell.swift",
       "kind": "BooleanLiteral",
-      "offset": 1286,
+      "offset": 1268,
       "length": 5,
       "value": "false"
     },
     {
       "filePath": "\/Users\/ink\/Desktop\/WorkSpace\/AsgardProject\/asgard-ios-core\/AsgardCore\/Chatbot\/UI\/Components\/cell\/BaseMessageCell.swift",
       "kind": "Array",
-      "offset": 1578,
+      "offset": 1560,
       "length": 2,
       "value": "[]"
     },
     {
       "filePath": "\/Users\/ink\/Desktop\/WorkSpace\/AsgardProject\/asgard-ios-core\/AsgardCore\/Chatbot\/UI\/Components\/cell\/BaseMessageCell.swift",
       "kind": "Array",
-      "offset": 1644,
+      "offset": 1626,
       "length": 2,
       "value": "[]"
     },
     {
       "filePath": "\/Users\/ink\/Desktop\/WorkSpace\/AsgardProject\/asgard-ios-core\/AsgardCore\/Chatbot\/UI\/Components\/cell\/BaseMessageCell.swift",
       "kind": "Array",
-      "offset": 1714,
+      "offset": 1696,
       "length": 2,
       "value": "[]"
     },
     {
       "filePath": "\/Users\/ink\/Desktop\/WorkSpace\/AsgardProject\/asgard-ios-core\/AsgardCore\/Chatbot\/UI\/Components\/cell\/ButtonMessageCell.swift",
       "kind": "StringLiteral",
-      "offset": 188,
+      "offset": 170,
       "length": 19,
       "value": "\"ButtonMessageCell\""
     },
     {
       "filePath": "\/Users\/ink\/Desktop\/WorkSpace\/AsgardProject\/asgard-ios-core\/AsgardCore\/Chatbot\/UI\/Components\/cell\/ButtonMessageCell.swift",
       "kind": "BooleanLiteral",
-      "offset": 435,
+      "offset": 417,
       "length": 4,
       "value": "true"
     },
     {
       "filePath": "\/Users\/ink\/Desktop\/WorkSpace\/AsgardProject\/asgard-ios-core\/AsgardCore\/Chatbot\/UI\/Components\/cell\/ButtonMessageCell.swift",
       "kind": "IntegerLiteral",
-      "offset": 479,
+      "offset": 461,
       "length": 1,
       "value": "0"
     },
     {
       "filePath": "\/Users\/ink\/Desktop\/WorkSpace\/AsgardProject\/asgard-ios-core\/AsgardCore\/Chatbot\/UI\/Components\/cell\/ButtonMessageCell.swift",
       "kind": "BooleanLiteral",
-      "offset": 526,
+      "offset": 508,
       "length": 4,
       "value": "true"
     },
     {
       "filePath": "\/Users\/ink\/Desktop\/WorkSpace\/AsgardProject\/asgard-ios-core\/AsgardCore\/Chatbot\/UI\/Components\/cell\/ButtonMessageCell.swift",
       "kind": "IntegerLiteral",
-      "offset": 736,
+      "offset": 718,
       "length": 2,
       "value": "18"
     },
     {
       "filePath": "\/Users\/ink\/Desktop\/WorkSpace\/AsgardProject\/asgard-ios-core\/AsgardCore\/Chatbot\/UI\/Components\/cell\/ButtonMessageCell.swift",
       "kind": "IntegerLiteral",
-      "offset": 789,
+      "offset": 771,
       "length": 1,
       "value": "2"
     },
     {
       "filePath": "\/Users\/ink\/Desktop\/WorkSpace\/AsgardProject\/asgard-ios-core\/AsgardCore\/Chatbot\/UI\/Components\/cell\/ButtonMessageCell.swift",
       "kind": "IntegerLiteral",
-      "offset": 974,
+      "offset": 956,
       "length": 2,
       "value": "16"
     },
     {
       "filePath": "\/Users\/ink\/Desktop\/WorkSpace\/AsgardProject\/asgard-ios-core\/AsgardCore\/Chatbot\/UI\/Components\/cell\/ButtonMessageCell.swift",
       "kind": "IntegerLiteral",
-      "offset": 1008,
+      "offset": 990,
       "length": 1,
       "value": "2"
     },
     {
       "filePath": "\/Users\/ink\/Desktop\/WorkSpace\/AsgardProject\/asgard-ios-core\/AsgardCore\/Chatbot\/UI\/Components\/cell\/ButtonMessageCell.swift",
       "kind": "IntegerLiteral",
-      "offset": 1231,
+      "offset": 1213,
       "length": 1,
       "value": "8"
     },
     {
       "filePath": "\/Users\/ink\/Desktop\/WorkSpace\/AsgardProject\/asgard-ios-core\/AsgardCore\/Chatbot\/UI\/Components\/cell\/ButtonMessageCell.swift",
       "kind": "BooleanLiteral",
-      "offset": 1480,
+      "offset": 1462,
       "length": 4,
       "value": "true"
     },
     {
       "filePath": "\/Users\/ink\/Desktop\/WorkSpace\/AsgardProject\/asgard-ios-core\/AsgardCore\/Chatbot\/UI\/Components\/cell\/ButtonMessageCell.swift",
       "kind": "Array",
-      "offset": 1969,
+      "offset": 1951,
       "length": 2,
       "value": "[]"
     },
     {
       "filePath": "\/Users\/ink\/Desktop\/WorkSpace\/AsgardProject\/asgard-ios-core\/AsgardCore\/Chatbot\/UI\/Components\/cell\/ButtonMessageCell.swift",
       "kind": "Array",
-      "offset": 2029,
+      "offset": 2011,
       "length": 2,
       "value": "[]"
     },
     {
       "filePath": "\/Users\/ink\/Desktop\/WorkSpace\/AsgardProject\/asgard-ios-core\/AsgardCore\/Chatbot\/UI\/Components\/cell\/CarouselMessageCell.swift",
       "kind": "StringLiteral",
-      "offset": 192,
+      "offset": 174,
       "length": 21,
       "value": "\"CarouselMessageCell\""
     },
     {
       "filePath": "\/Users\/ink\/Desktop\/WorkSpace\/AsgardProject\/asgard-ios-core\/AsgardCore\/Chatbot\/UI\/Components\/cell\/CarouselMessageCell.swift",
       "kind": "IntegerLiteral",
-      "offset": 432,
+      "offset": 414,
       "length": 2,
       "value": "12"
     },
     {
       "filePath": "\/Users\/ink\/Desktop\/WorkSpace\/AsgardProject\/asgard-ios-core\/AsgardCore\/Chatbot\/UI\/Components\/cell\/CarouselMessageCell.swift",
       "kind": "IntegerLiteral",
-      "offset": 476,
+      "offset": 458,
       "length": 1,
       "value": "0"
     },
     {
       "filePath": "\/Users\/ink\/Desktop\/WorkSpace\/AsgardProject\/asgard-ios-core\/AsgardCore\/Chatbot\/UI\/Components\/cell\/CarouselMessageCell.swift",
       "kind": "IntegerLiteral",
-      "offset": 526,
+      "offset": 508,
       "length": 1,
       "value": "0"
     },
     {
       "filePath": "\/Users\/ink\/Desktop\/WorkSpace\/AsgardProject\/asgard-ios-core\/AsgardCore\/Chatbot\/UI\/Components\/cell\/CarouselMessageCell.swift",
       "kind": "IntegerLiteral",
-      "offset": 535,
+      "offset": 517,
       "length": 2,
       "value": "12"
     },
     {
       "filePath": "\/Users\/ink\/Desktop\/WorkSpace\/AsgardProject\/asgard-ios-core\/AsgardCore\/Chatbot\/UI\/Components\/cell\/CarouselMessageCell.swift",
       "kind": "IntegerLiteral",
-      "offset": 547,
+      "offset": 529,
       "length": 1,
       "value": "0"
     },
     {
       "filePath": "\/Users\/ink\/Desktop\/WorkSpace\/AsgardProject\/asgard-ios-core\/AsgardCore\/Chatbot\/UI\/Components\/cell\/CarouselMessageCell.swift",
       "kind": "IntegerLiteral",
-      "offset": 557,
+      "offset": 539,
       "length": 2,
       "value": "12"
     },
     {
       "filePath": "\/Users\/ink\/Desktop\/WorkSpace\/AsgardProject\/asgard-ios-core\/AsgardCore\/Chatbot\/UI\/Components\/cell\/CarouselMessageCell.swift",
       "kind": "BooleanLiteral",
-      "offset": 764,
+      "offset": 746,
       "length": 5,
       "value": "false"
     },
     {
       "filePath": "\/Users\/ink\/Desktop\/WorkSpace\/AsgardProject\/asgard-ios-core\/AsgardCore\/Chatbot\/UI\/Components\/cell\/CarouselMessageCell.swift",
       "kind": "BooleanLiteral",
-      "offset": 824,
+      "offset": 806,
       "length": 5,
       "value": "false"
     },
     {
       "filePath": "\/Users\/ink\/Desktop\/WorkSpace\/AsgardProject\/asgard-ios-core\/AsgardCore\/Chatbot\/UI\/Components\/cell\/CarouselMessageCell.swift",
       "kind": "Array",
-      "offset": 943,
+      "offset": 925,
       "length": 2,
       "value": "[]"
     },
     {
       "filePath": "\/Users\/ink\/Desktop\/WorkSpace\/AsgardProject\/asgard-ios-core\/AsgardCore\/Chatbot\/UI\/Components\/cell\/CarouselMessageCell.swift",
       "kind": "StringLiteral",
-      "offset": 10615,
+      "offset": 10597,
       "length": 18,
       "value": "\"CarouselCardCell\""
     },
     {
       "filePath": "\/Users\/ink\/Desktop\/WorkSpace\/AsgardProject\/asgard-ios-core\/AsgardCore\/Chatbot\/UI\/Components\/cell\/CarouselMessageCell.swift",
       "kind": "IntegerLiteral",
-      "offset": 10817,
+      "offset": 10799,
       "length": 2,
       "value": "12"
     },
     {
       "filePath": "\/Users\/ink\/Desktop\/WorkSpace\/AsgardProject\/asgard-ios-core\/AsgardCore\/Chatbot\/UI\/Components\/cell\/CarouselMessageCell.swift",
       "kind": "IntegerLiteral",
-      "offset": 10923,
+      "offset": 10905,
       "length": 1,
       "value": "0"
     },
     {
       "filePath": "\/Users\/ink\/Desktop\/WorkSpace\/AsgardProject\/asgard-ios-core\/AsgardCore\/Chatbot\/UI\/Components\/cell\/CarouselMessageCell.swift",
       "kind": "IntegerLiteral",
-      "offset": 10934,
+      "offset": 10916,
       "length": 1,
       "value": "2"
     },
     {
       "filePath": "\/Users\/ink\/Desktop\/WorkSpace\/AsgardProject\/asgard-ios-core\/AsgardCore\/Chatbot\/UI\/Components\/cell\/CarouselMessageCell.swift",
       "kind": "FloatLiteral",
-      "offset": 10972,
+      "offset": 10954,
       "length": 3,
       "value": "0.1"
     },
     {
       "filePath": "\/Users\/ink\/Desktop\/WorkSpace\/AsgardProject\/asgard-ios-core\/AsgardCore\/Chatbot\/UI\/Components\/cell\/CarouselMessageCell.swift",
       "kind": "IntegerLiteral",
-      "offset": 11010,
+      "offset": 10992,
       "length": 1,
       "value": "4"
     },
     {
       "filePath": "\/Users\/ink\/Desktop\/WorkSpace\/AsgardProject\/asgard-ios-core\/AsgardCore\/Chatbot\/UI\/Components\/cell\/CarouselMessageCell.swift",
       "kind": "BooleanLiteral",
-      "offset": 11041,
+      "offset": 11023,
       "length": 5,
       "value": "false"
     },
     {
       "filePath": "\/Users\/ink\/Desktop\/WorkSpace\/AsgardProject\/asgard-ios-core\/AsgardCore\/Chatbot\/UI\/Components\/cell\/CarouselMessageCell.swift",
       "kind": "BooleanLiteral",
-      "offset": 11253,
+      "offset": 11235,
       "length": 4,
       "value": "true"
     },
     {
       "filePath": "\/Users\/ink\/Desktop\/WorkSpace\/AsgardProject\/asgard-ios-core\/AsgardCore\/Chatbot\/UI\/Components\/cell\/CarouselMessageCell.swift",
       "kind": "IntegerLiteral",
-      "offset": 11297,
+      "offset": 11279,
       "length": 2,
       "value": "12"
     },
     {
       "filePath": "\/Users\/ink\/Desktop\/WorkSpace\/AsgardProject\/asgard-ios-core\/AsgardCore\/Chatbot\/UI\/Components\/cell\/CarouselMessageCell.swift",
       "kind": "BooleanLiteral",
-      "offset": 11430,
+      "offset": 11412,
       "length": 4,
       "value": "true"
     },
     {
       "filePath": "\/Users\/ink\/Desktop\/WorkSpace\/AsgardProject\/asgard-ios-core\/AsgardCore\/Chatbot\/UI\/Components\/cell\/CarouselMessageCell.swift",
       "kind": "IntegerLiteral",
-      "offset": 11640,
+      "offset": 11622,
       "length": 2,
       "value": "16"
     },
     {
       "filePath": "\/Users\/ink\/Desktop\/WorkSpace\/AsgardProject\/asgard-ios-core\/AsgardCore\/Chatbot\/UI\/Components\/cell\/CarouselMessageCell.swift",
       "kind": "IntegerLiteral",
-      "offset": 11693,
+      "offset": 11675,
       "length": 1,
       "value": "0"
     },
     {
       "filePath": "\/Users\/ink\/Desktop\/WorkSpace\/AsgardProject\/asgard-ios-core\/AsgardCore\/Chatbot\/UI\/Components\/cell\/CarouselMessageCell.swift",
       "kind": "IntegerLiteral",
-      "offset": 11905,
+      "offset": 11887,
       "length": 2,
       "value": "14"
     },
     {
       "filePath": "\/Users\/ink\/Desktop\/WorkSpace\/AsgardProject\/asgard-ios-core\/AsgardCore\/Chatbot\/UI\/Components\/cell\/CarouselMessageCell.swift",
       "kind": "IntegerLiteral",
-      "offset": 11939,
+      "offset": 11921,
       "length": 1,
       "value": "0"
     },
     {
       "filePath": "\/Users\/ink\/Desktop\/WorkSpace\/AsgardProject\/asgard-ios-core\/AsgardCore\/Chatbot\/UI\/Components\/cell\/CarouselMessageCell.swift",
       "kind": "IntegerLiteral",
-      "offset": 12200,
+      "offset": 12182,
       "length": 1,
       "value": "6"
     },
     {
       "filePath": "\/Users\/ink\/Desktop\/WorkSpace\/AsgardProject\/asgard-ios-core\/AsgardCore\/Chatbot\/UI\/Components\/cell\/CarouselMessageCell.swift",
       "kind": "BooleanLiteral",
-      "offset": 12449,
+      "offset": 12431,
       "length": 4,
       "value": "true"
     },
@@ -7430,42 +7398,42 @@
     {
       "filePath": "\/Users\/ink\/Desktop\/WorkSpace\/AsgardProject\/asgard-ios-core\/AsgardCore\/Chatbot\/UI\/Components\/cell\/ImageMessageCell.swift",
       "kind": "StringLiteral",
-      "offset": 186,
+      "offset": 168,
       "length": 18,
       "value": "\"ImageMessageCell\""
     },
     {
       "filePath": "\/Users\/ink\/Desktop\/WorkSpace\/AsgardProject\/asgard-ios-core\/AsgardCore\/Chatbot\/UI\/Components\/cell\/ImageMessageCell.swift",
       "kind": "BooleanLiteral",
-      "offset": 442,
+      "offset": 424,
       "length": 4,
       "value": "true"
     },
     {
       "filePath": "\/Users\/ink\/Desktop\/WorkSpace\/AsgardProject\/asgard-ios-core\/AsgardCore\/Chatbot\/UI\/Components\/cell\/ImageMessageCell.swift",
       "kind": "IntegerLiteral",
-      "offset": 486,
+      "offset": 468,
       "length": 1,
       "value": "0"
     },
     {
       "filePath": "\/Users\/ink\/Desktop\/WorkSpace\/AsgardProject\/asgard-ios-core\/AsgardCore\/Chatbot\/UI\/Components\/cell\/ImageMessageCell.swift",
       "kind": "BooleanLiteral",
-      "offset": 558,
+      "offset": 540,
       "length": 4,
       "value": "true"
     },
     {
       "filePath": "\/Users\/ink\/Desktop\/WorkSpace\/AsgardProject\/asgard-ios-core\/AsgardCore\/Chatbot\/UI\/Components\/cell\/ImageMessageCell.swift",
       "kind": "IntegerLiteral",
-      "offset": 787,
+      "offset": 769,
       "length": 1,
       "value": "0"
     },
     {
       "filePath": "\/Users\/ink\/Desktop\/WorkSpace\/AsgardProject\/asgard-ios-core\/AsgardCore\/Chatbot\/UI\/Components\/cell\/ImageMessageCell.swift",
       "kind": "IntegerLiteral",
-      "offset": 830,
+      "offset": 812,
       "length": 2,
       "value": "16"
     },
@@ -7570,322 +7538,322 @@
     {
       "filePath": "\/Users\/ink\/Desktop\/WorkSpace\/AsgardProject\/asgard-ios-core\/AsgardCore\/Chatbot\/UI\/Components\/cell\/MessageCell.swift",
       "kind": "StringLiteral",
-      "offset": 176,
+      "offset": 158,
       "length": 13,
       "value": "\"MessageCell\""
     },
     {
       "filePath": "\/Users\/ink\/Desktop\/WorkSpace\/AsgardProject\/asgard-ios-core\/AsgardCore\/Chatbot\/UI\/Components\/cell\/MessageCell.swift",
       "kind": "IntegerLiteral",
-      "offset": 326,
+      "offset": 308,
       "length": 1,
       "value": "0"
     },
     {
       "filePath": "\/Users\/ink\/Desktop\/WorkSpace\/AsgardProject\/asgard-ios-core\/AsgardCore\/Chatbot\/UI\/Components\/cell\/MessageCell.swift",
       "kind": "IntegerLiteral",
-      "offset": 369,
+      "offset": 351,
       "length": 2,
       "value": "16"
     },
     {
       "filePath": "\/Users\/ink\/Desktop\/WorkSpace\/AsgardProject\/asgard-ios-core\/AsgardCore\/Chatbot\/UI\/Components\/cell\/VideoMessageCell.swift",
       "kind": "StringLiteral",
-      "offset": 199,
+      "offset": 181,
       "length": 18,
       "value": "\"VideoMessageCell\""
     },
     {
       "filePath": "\/Users\/ink\/Desktop\/WorkSpace\/AsgardProject\/asgard-ios-core\/AsgardCore\/Chatbot\/UI\/Components\/cell\/VideoMessageCell.swift",
       "kind": "BooleanLiteral",
-      "offset": 425,
+      "offset": 407,
       "length": 4,
       "value": "true"
     },
     {
       "filePath": "\/Users\/ink\/Desktop\/WorkSpace\/AsgardProject\/asgard-ios-core\/AsgardCore\/Chatbot\/UI\/Components\/cell\/VideoMessageCell.swift",
       "kind": "IntegerLiteral",
-      "offset": 469,
+      "offset": 451,
       "length": 1,
       "value": "0"
     },
     {
       "filePath": "\/Users\/ink\/Desktop\/WorkSpace\/AsgardProject\/asgard-ios-core\/AsgardCore\/Chatbot\/UI\/Components\/cell\/VideoMessageCell.swift",
       "kind": "BooleanLiteral",
-      "offset": 569,
+      "offset": 551,
       "length": 4,
       "value": "true"
     },
     {
       "filePath": "\/Users\/ink\/Desktop\/WorkSpace\/AsgardProject\/asgard-ios-core\/AsgardCore\/Chatbot\/UI\/Components\/cell\/VideoMessageCell.swift",
       "kind": "FloatLiteral",
-      "offset": 886,
+      "offset": 868,
       "length": 3,
       "value": "0.4"
     },
     {
       "filePath": "\/Users\/ink\/Desktop\/WorkSpace\/AsgardProject\/asgard-ios-core\/AsgardCore\/Chatbot\/UI\/Components\/cell\/VideoMessageCell.swift",
       "kind": "BooleanLiteral",
-      "offset": 931,
+      "offset": 913,
       "length": 5,
       "value": "false"
     },
     {
       "filePath": "\/Users\/ink\/Desktop\/WorkSpace\/AsgardProject\/asgard-ios-core\/AsgardCore\/Chatbot\/UI\/Components\/cell\/VideoMessageCell.swift",
       "kind": "StringLiteral",
-      "offset": 1100,
+      "offset": 1082,
       "length": 11,
       "value": "\"play.fill\""
     },
     {
       "filePath": "\/Users\/ink\/Desktop\/WorkSpace\/AsgardProject\/asgard-ios-core\/AsgardCore\/Chatbot\/UI\/Components\/cell\/VideoMessageCell.swift",
       "kind": "FloatLiteral",
-      "offset": 1228,
+      "offset": 1210,
       "length": 3,
       "value": "0.6"
     },
     {
       "filePath": "\/Users\/ink\/Desktop\/WorkSpace\/AsgardProject\/asgard-ios-core\/AsgardCore\/Chatbot\/UI\/Components\/cell\/VideoMessageCell.swift",
       "kind": "IntegerLiteral",
-      "offset": 1269,
+      "offset": 1251,
       "length": 2,
       "value": "25"
     },
     {
       "filePath": "\/Users\/ink\/Desktop\/WorkSpace\/AsgardProject\/asgard-ios-core\/AsgardCore\/Chatbot\/UI\/Components\/cell\/VideoMessageCell.swift",
       "kind": "IntegerLiteral",
-      "offset": 1379,
+      "offset": 1361,
       "length": 1,
       "value": "0"
     },
     {
       "filePath": "\/Users\/ink\/Desktop\/WorkSpace\/AsgardProject\/asgard-ios-core\/AsgardCore\/Chatbot\/UI\/Components\/cell\/VideoMessageCell.swift",
       "kind": "IntegerLiteral",
-      "offset": 1390,
+      "offset": 1372,
       "length": 1,
       "value": "2"
     },
     {
       "filePath": "\/Users\/ink\/Desktop\/WorkSpace\/AsgardProject\/asgard-ios-core\/AsgardCore\/Chatbot\/UI\/Components\/cell\/VideoMessageCell.swift",
       "kind": "FloatLiteral",
-      "offset": 1430,
+      "offset": 1412,
       "length": 3,
       "value": "0.3"
     },
     {
       "filePath": "\/Users\/ink\/Desktop\/WorkSpace\/AsgardProject\/asgard-ios-core\/AsgardCore\/Chatbot\/UI\/Components\/cell\/VideoMessageCell.swift",
       "kind": "IntegerLiteral",
-      "offset": 1470,
+      "offset": 1452,
       "length": 1,
       "value": "4"
     },
     {
       "filePath": "\/Users\/ink\/Desktop\/WorkSpace\/AsgardProject\/asgard-ios-core\/AsgardCore\/Chatbot\/UI\/Components\/cell\/VideoMessageCell.swift",
       "kind": "IntegerLiteral",
-      "offset": 1621,
+      "offset": 1603,
       "length": 2,
       "value": "12"
     },
     {
       "filePath": "\/Users\/ink\/Desktop\/WorkSpace\/AsgardProject\/asgard-ios-core\/AsgardCore\/Chatbot\/UI\/Components\/cell\/VideoMessageCell.swift",
       "kind": "FloatLiteral",
-      "offset": 1740,
+      "offset": 1722,
       "length": 3,
       "value": "0.8"
     },
     {
       "filePath": "\/Users\/ink\/Desktop\/WorkSpace\/AsgardProject\/asgard-ios-core\/AsgardCore\/Chatbot\/UI\/Components\/cell\/VideoMessageCell.swift",
       "kind": "IntegerLiteral",
-      "offset": 1818,
+      "offset": 1800,
       "length": 1,
       "value": "6"
     },
     {
       "filePath": "\/Users\/ink\/Desktop\/WorkSpace\/AsgardProject\/asgard-ios-core\/AsgardCore\/Chatbot\/UI\/Components\/cell\/VideoMessageCell.swift",
       "kind": "BooleanLiteral",
-      "offset": 1850,
+      "offset": 1832,
       "length": 4,
       "value": "true"
     },
     {
       "filePath": "\/Users\/ink\/Desktop\/WorkSpace\/AsgardProject\/asgard-ios-core\/AsgardCore\/Chatbot\/UI\/Components\/cell\/VideoMessageCell.swift",
       "kind": "BooleanLiteral",
-      "offset": 2052,
+      "offset": 2034,
       "length": 4,
       "value": "true"
     },
     {
       "filePath": "\/Users\/ink\/Desktop\/WorkSpace\/AsgardProject\/asgard-ios-core\/AsgardCore\/Chatbot\/UI\/Components\/cell\/VideoMessageCell.swift",
       "kind": "StringLiteral",
-      "offset": 13520,
+      "offset": 13427,
       "length": 11,
       "value": "\"sddefault\""
     },
     {
       "filePath": "\/Users\/ink\/Desktop\/WorkSpace\/AsgardProject\/asgard-ios-core\/AsgardCore\/Chatbot\/UI\/Components\/AsgardImageViewController.swift",
       "kind": "BooleanLiteral",
-      "offset": 222,
+      "offset": 204,
       "length": 5,
       "value": "false"
     },
     {
       "filePath": "\/Users\/ink\/Desktop\/WorkSpace\/AsgardProject\/asgard-ios-core\/AsgardCore\/Chatbot\/UI\/Components\/AsgardImageViewController.swift",
       "kind": "FloatLiteral",
-      "offset": 425,
+      "offset": 407,
       "length": 3,
       "value": "1.0"
     },
     {
       "filePath": "\/Users\/ink\/Desktop\/WorkSpace\/AsgardProject\/asgard-ios-core\/AsgardCore\/Chatbot\/UI\/Components\/AsgardImageViewController.swift",
       "kind": "FloatLiteral",
-      "offset": 467,
+      "offset": 449,
       "length": 3,
       "value": "3.0"
     },
     {
       "filePath": "\/Users\/ink\/Desktop\/WorkSpace\/AsgardProject\/asgard-ios-core\/AsgardCore\/Chatbot\/UI\/Components\/AsgardImageViewController.swift",
       "kind": "BooleanLiteral",
-      "offset": 521,
+      "offset": 503,
       "length": 5,
       "value": "false"
     },
     {
       "filePath": "\/Users\/ink\/Desktop\/WorkSpace\/AsgardProject\/asgard-ios-core\/AsgardCore\/Chatbot\/UI\/Components\/AsgardImageViewController.swift",
       "kind": "BooleanLiteral",
-      "offset": 579,
+      "offset": 561,
       "length": 5,
       "value": "false"
     },
     {
       "filePath": "\/Users\/ink\/Desktop\/WorkSpace\/AsgardProject\/asgard-ios-core\/AsgardCore\/Chatbot\/UI\/Components\/AsgardImageViewController.swift",
       "kind": "BooleanLiteral",
-      "offset": 765,
+      "offset": 747,
       "length": 5,
       "value": "false"
     },
     {
       "filePath": "\/Users\/ink\/Desktop\/WorkSpace\/AsgardProject\/asgard-ios-core\/AsgardCore\/Chatbot\/UI\/Components\/AsgardImageViewController.swift",
       "kind": "BooleanLiteral",
-      "offset": 1049,
+      "offset": 1031,
       "length": 5,
       "value": "false"
     },
     {
       "filePath": "\/Users\/ink\/Desktop\/WorkSpace\/AsgardProject\/asgard-ios-core\/AsgardCore\/Chatbot\/UI\/Components\/AsgardImageViewController.swift",
       "kind": "FloatLiteral",
-      "offset": 1233,
+      "offset": 1215,
       "length": 4,
       "value": "0.95"
     },
     {
       "filePath": "\/Users\/ink\/Desktop\/WorkSpace\/AsgardProject\/asgard-ios-core\/AsgardCore\/Chatbot\/UI\/Components\/AsgardImageViewController.swift",
       "kind": "BooleanLiteral",
-      "offset": 1296,
+      "offset": 1278,
       "length": 5,
       "value": "false"
     },
     {
       "filePath": "\/Users\/ink\/Desktop\/WorkSpace\/AsgardProject\/asgard-ios-core\/AsgardCore\/Chatbot\/UI\/Components\/AsgardImageViewController.swift",
       "kind": "StringLiteral",
-      "offset": 1471,
+      "offset": 1453,
       "length": 7,
       "value": "\"xmark\""
     },
     {
       "filePath": "\/Users\/ink\/Desktop\/WorkSpace\/AsgardProject\/asgard-ios-core\/AsgardCore\/Chatbot\/UI\/Components\/AsgardImageViewController.swift",
       "kind": "FloatLiteral",
-      "offset": 1595,
+      "offset": 1577,
       "length": 3,
       "value": "0.5"
     },
     {
       "filePath": "\/Users\/ink\/Desktop\/WorkSpace\/AsgardProject\/asgard-ios-core\/AsgardCore\/Chatbot\/UI\/Components\/AsgardImageViewController.swift",
       "kind": "IntegerLiteral",
-      "offset": 1636,
+      "offset": 1618,
       "length": 2,
       "value": "20"
     },
     {
       "filePath": "\/Users\/ink\/Desktop\/WorkSpace\/AsgardProject\/asgard-ios-core\/AsgardCore\/Chatbot\/UI\/Components\/AsgardImageViewController.swift",
       "kind": "BooleanLiteral",
-      "offset": 1698,
+      "offset": 1680,
       "length": 5,
       "value": "false"
     },
     {
       "filePath": "\/Users\/ink\/Desktop\/WorkSpace\/AsgardProject\/asgard-ios-core\/AsgardCore\/Chatbot\/UI\/Components\/AsgardImageViewController.swift",
       "kind": "FloatLiteral",
-      "offset": 2073,
+      "offset": 2055,
       "length": 3,
       "value": "0.3"
     },
     {
       "filePath": "\/Users\/ink\/Desktop\/WorkSpace\/AsgardProject\/asgard-ios-core\/AsgardCore\/Chatbot\/UI\/Components\/AsgardImageViewController.swift",
       "kind": "BooleanLiteral",
-      "offset": 2110,
+      "offset": 2092,
       "length": 4,
       "value": "true"
     },
     {
       "filePath": "\/Users\/ink\/Desktop\/WorkSpace\/AsgardProject\/asgard-ios-core\/AsgardCore\/Chatbot\/UI\/Components\/AsgardImageViewController.swift",
       "kind": "BooleanLiteral",
-      "offset": 2180,
+      "offset": 2162,
       "length": 5,
       "value": "false"
     },
     {
       "filePath": "\/Users\/ink\/Desktop\/WorkSpace\/AsgardProject\/asgard-ios-core\/AsgardCore\/Chatbot\/UI\/Components\/AsgardImageViewController.swift",
       "kind": "BooleanLiteral",
-      "offset": 2427,
+      "offset": 2409,
       "length": 4,
       "value": "true"
     },
     {
       "filePath": "\/Users\/ink\/Desktop\/WorkSpace\/AsgardProject\/asgard-ios-core\/AsgardCore\/Chatbot\/UI\/Components\/AsgardImageViewController.swift",
       "kind": "BooleanLiteral",
-      "offset": 2494,
+      "offset": 2476,
       "length": 5,
       "value": "false"
     },
     {
       "filePath": "\/Users\/ink\/Desktop\/WorkSpace\/AsgardProject\/asgard-ios-core\/AsgardCore\/Chatbot\/UI\/Components\/AsgardImageViewController.swift",
       "kind": "StringLiteral",
-      "offset": 2634,
+      "offset": 2616,
       "length": 20,
       "value": "\"圖片載入失敗\""
     },
     {
       "filePath": "\/Users\/ink\/Desktop\/WorkSpace\/AsgardProject\/asgard-ios-core\/AsgardCore\/Chatbot\/UI\/Components\/AsgardImageViewController.swift",
       "kind": "IntegerLiteral",
-      "offset": 2729,
+      "offset": 2711,
       "length": 2,
       "value": "16"
     },
     {
       "filePath": "\/Users\/ink\/Desktop\/WorkSpace\/AsgardProject\/asgard-ios-core\/AsgardCore\/Chatbot\/UI\/Components\/AsgardImageViewController.swift",
       "kind": "BooleanLiteral",
-      "offset": 2796,
+      "offset": 2778,
       "length": 4,
       "value": "true"
     },
     {
       "filePath": "\/Users\/ink\/Desktop\/WorkSpace\/AsgardProject\/asgard-ios-core\/AsgardCore\/Chatbot\/UI\/Components\/AsgardImageViewController.swift",
       "kind": "BooleanLiteral",
-      "offset": 2859,
+      "offset": 2841,
       "length": 5,
       "value": "false"
     },
     {
       "filePath": "\/Users\/ink\/Desktop\/WorkSpace\/AsgardProject\/asgard-ios-core\/AsgardCore\/Chatbot\/UI\/Components\/AsgardImageViewController.swift",
       "kind": "BooleanLiteral",
-      "offset": 3805,
+      "offset": 3787,
       "length": 4,
       "value": "true"
     },
     {
       "filePath": "\/Users\/ink\/Desktop\/WorkSpace\/AsgardProject\/asgard-ios-core\/AsgardCore\/Chatbot\/UI\/Components\/AsgardImageViewController.swift",
       "kind": "BooleanLiteral",
-      "offset": 4010,
+      "offset": 3992,
       "length": 4,
       "value": "true"
     },
@@ -8714,6 +8682,13 @@
       "offset": 2588,
       "length": 4,
       "value": "true"
+    },
+    {
+      "filePath": "\/Users\/ink\/Desktop\/WorkSpace\/AsgardProject\/asgard-ios-core\/AsgardCore\/Core\/Utils\/AsgardImageLoader.swift",
+      "kind": "Dictionary",
+      "offset": 510,
+      "length": 3,
+      "value": "[]"
     },
     {
       "filePath": "\/Users\/ink\/Desktop\/WorkSpace\/AsgardProject\/asgard-ios-core\/AsgardCore\/Core\/Utils\/ColorUtils.swift",

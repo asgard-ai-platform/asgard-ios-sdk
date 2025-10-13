@@ -10,11 +10,11 @@
 		</data>
 		<key>Modules/AsgardCore.swiftmodule/arm64-apple-ios-simulator.abi.json</key>
 		<data>
-		gmMeM/hEDBpvpReO5z0YVjmGV3k=
+		IfwahsGilAuFBHP1VSua5yEkGlg=
 		</data>
 		<key>Modules/AsgardCore.swiftmodule/arm64-apple-ios-simulator.private.swiftinterface</key>
 		<data>
-		38kY9NkF045PuZgVudZxctY3MK4=
+		6wR/9hc28Sq6yTuWBdjUnRbzTus=
 		</data>
 		<key>Modules/AsgardCore.swiftmodule/arm64-apple-ios-simulator.swiftdoc</key>
 		<data>
@@ -22,19 +22,19 @@
 		</data>
 		<key>Modules/AsgardCore.swiftmodule/arm64-apple-ios-simulator.swiftinterface</key>
 		<data>
-		38kY9NkF045PuZgVudZxctY3MK4=
+		6wR/9hc28Sq6yTuWBdjUnRbzTus=
 		</data>
 		<key>Modules/AsgardCore.swiftmodule/arm64-apple-ios-simulator.swiftmodule</key>
 		<data>
-		YovY1Iv883n7DTeAVSCSkfQIy7I=
+		7DA9cWofj+1zd5kcOJwnzrDsaFA=
 		</data>
 		<key>Modules/AsgardCore.swiftmodule/x86_64-apple-ios-simulator.abi.json</key>
 		<data>
-		gmMeM/hEDBpvpReO5z0YVjmGV3k=
+		IfwahsGilAuFBHP1VSua5yEkGlg=
 		</data>
 		<key>Modules/AsgardCore.swiftmodule/x86_64-apple-ios-simulator.private.swiftinterface</key>
 		<data>
-		DtmA1d/ds2xGIMN3tinN+u7Arrg=
+		gM3ZNm8WS2/4g2gERBcN2RPWdNQ=
 		</data>
 		<key>Modules/AsgardCore.swiftmodule/x86_64-apple-ios-simulator.swiftdoc</key>
 		<data>
@@ -42,11 +42,11 @@
 		</data>
 		<key>Modules/AsgardCore.swiftmodule/x86_64-apple-ios-simulator.swiftinterface</key>
 		<data>
-		DtmA1d/ds2xGIMN3tinN+u7Arrg=
+		gM3ZNm8WS2/4g2gERBcN2RPWdNQ=
 		</data>
 		<key>Modules/AsgardCore.swiftmodule/x86_64-apple-ios-simulator.swiftmodule</key>
 		<data>
-		Ph9pSXyp5PfCxtjGRthPn/Cyy9M=
+		xVC94b7U6u4jP3Lxt7gtq7g+VA4=
 		</data>
 	</dict>
 	<key>files2</key>
@@ -55,14 +55,14 @@
 		<dict>
 			<key>hash2</key>
 			<data>
-			cmfwCh0w/VJw55QsaupeJCDvCq/OQtq1DdrzQo6Z9V0=
+			VGTs/IXPCobdA53yY6rLDGz5KSJmHans6fdSnMjOuFQ=
 			</data>
 		</dict>
 		<key>Modules/AsgardCore.swiftmodule/arm64-apple-ios-simulator.private.swiftinterface</key>
 		<dict>
 			<key>hash2</key>
 			<data>
-			63ywDWxgJYu/grJ+qlYCuo8FvL4ozHRUet+ZM5VKZJU=
+			hf8UqWBolrLg+TgOnieXgWX3B1REOTYeo1m5Len7HnY=
 			</data>
 		</dict>
 		<key>Modules/AsgardCore.swiftmodule/arm64-apple-ios-simulator.swiftdoc</key>
@@ -76,28 +76,28 @@
 		<dict>
 			<key>hash2</key>
 			<data>
-			63ywDWxgJYu/grJ+qlYCuo8FvL4ozHRUet+ZM5VKZJU=
+			hf8UqWBolrLg+TgOnieXgWX3B1REOTYeo1m5Len7HnY=
 			</data>
 		</dict>
 		<key>Modules/AsgardCore.swiftmodule/arm64-apple-ios-simulator.swiftmodule</key>
 		<dict>
 			<key>hash2</key>
 			<data>
-			v7zRYlwTxeffrQ/NV+rQknSIfoV3rWM01hKjPTAP+r4=
+			An/qd5l907bxlu5gSwMYvlUoqxxuZpTKeK4MAStXvXw=
 			</data>
 		</dict>
 		<key>Modules/AsgardCore.swiftmodule/x86_64-apple-ios-simulator.abi.json</key>
 		<dict>
 			<key>hash2</key>
 			<data>
-			cmfwCh0w/VJw55QsaupeJCDvCq/OQtq1DdrzQo6Z9V0=
+			VGTs/IXPCobdA53yY6rLDGz5KSJmHans6fdSnMjOuFQ=
 			</data>
 		</dict>
 		<key>Modules/AsgardCore.swiftmodule/x86_64-apple-ios-simulator.private.swiftinterface</key>
 		<dict>
 			<key>hash2</key>
 			<data>
-			18FxnLqNm6zoNLs0oanIdTs0DeuORKBciRIu9NMZy+g=
+			S64S8ClhtaPGELp8izIqqGbSl9QHHrn3x5jnwZyZHqw=
 			</data>
 		</dict>
 		<key>Modules/AsgardCore.swiftmodule/x86_64-apple-ios-simulator.swiftdoc</key>
@@ -111,14 +111,14 @@
 		<dict>
 			<key>hash2</key>
 			<data>
-			18FxnLqNm6zoNLs0oanIdTs0DeuORKBciRIu9NMZy+g=
+			S64S8ClhtaPGELp8izIqqGbSl9QHHrn3x5jnwZyZHqw=
 			</data>
 		</dict>
 		<key>Modules/AsgardCore.swiftmodule/x86_64-apple-ios-simulator.swiftmodule</key>
 		<dict>
 			<key>hash2</key>
 			<data>
-			FePl++Sb07VVZvCJp1fGwaJmgnXg4givlVdqMwc2dFU=
+			luv4HFWie7lKsAtx5wYJXLtmxGtLXn2em9wJ5F6nkLA=
 			</data>
 		</dict>
 	</dict>
