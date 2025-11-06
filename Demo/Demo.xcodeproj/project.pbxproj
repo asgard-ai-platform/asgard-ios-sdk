@@ -20,8 +20,6 @@
 /* Begin PBXFileSystemSynchronizedRootGroup section */
 		81F61B342DD35078009D69B0 /* Demo */ = {
 			isa = PBXFileSystemSynchronizedRootGroup;
-			exceptions = (
-			);
 			path = Demo;
 			sourceTree = "<group>";
 		};
@@ -71,7 +69,6 @@
 				A6A65D0D1221F1B0F288FE9F /* Pods-Demo.debug.xcconfig */,
 				5EA3FD5FD58AE83DAC2FA175 /* Pods-Demo.release.xcconfig */,
 			);
-			name = Pods;
 			path = Pods;
 			sourceTree = "<group>";
 		};
@@ -175,9 +172,13 @@
 			inputFileListPaths = (
 				"${PODS_ROOT}/Target Support Files/Pods-Demo/Pods-Demo-frameworks-${CONFIGURATION}-input-files.xcfilelist",
 			);
+			inputPaths = (
+			);
 			name = "[CP] Embed Pods Frameworks";
 			outputFileListPaths = (
 				"${PODS_ROOT}/Target Support Files/Pods-Demo/Pods-Demo-frameworks-${CONFIGURATION}-output-files.xcfilelist",
+			);
+			outputPaths = (
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 			shellPath = /bin/sh;
@@ -327,7 +328,9 @@
 				ENABLE_PREVIEWS = YES;
 				ENABLE_USER_SCRIPT_SANDBOXING = NO;
 				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_KEY_NSCameraUsageDescription = "需要拍照上傳檔案";
 				INFOPLIST_KEY_NSMicrophoneUsageDescription = "需要使用麥克風來進行語音輸入";
+				INFOPLIST_KEY_NSPhotoLibraryUsageDescription = "需要開啟相簿選取照片上傳";
 				INFOPLIST_KEY_NSSpeechRecognitionUsageDescription = "需要使用語音識別來轉換您的語音為文字";
 				"INFOPLIST_KEY_UIApplicationSceneManifest_Generation[sdk=iphoneos*]" = YES;
 				"INFOPLIST_KEY_UIApplicationSceneManifest_Generation[sdk=iphonesimulator*]" = YES;
@@ -370,7 +373,9 @@
 				ENABLE_PREVIEWS = YES;
 				ENABLE_USER_SCRIPT_SANDBOXING = NO;
 				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_KEY_NSCameraUsageDescription = "需要拍照上傳檔案";
 				INFOPLIST_KEY_NSMicrophoneUsageDescription = "需要使用麥克風來進行語音輸入";
+				INFOPLIST_KEY_NSPhotoLibraryUsageDescription = "需要開啟相簿選取照片上傳";
 				INFOPLIST_KEY_NSSpeechRecognitionUsageDescription = "需要使用語音識別來轉換您的語音為文字";
 				"INFOPLIST_KEY_UIApplicationSceneManifest_Generation[sdk=iphoneos*]" = YES;
 				"INFOPLIST_KEY_UIApplicationSceneManifest_Generation[sdk=iphonesimulator*]" = YES;

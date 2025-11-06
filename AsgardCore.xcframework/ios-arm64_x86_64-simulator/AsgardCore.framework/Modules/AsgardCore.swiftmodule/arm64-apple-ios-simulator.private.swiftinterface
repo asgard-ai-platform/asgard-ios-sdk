@@ -1,7 +1,7 @@
 // swift-interface-format-version: 1.0
-// swift-compiler-version: Apple Swift version 6.2 effective-5.10 (swiftlang-6.2.0.19.9 clang-1700.3.19.1)
+// swift-compiler-version: Apple Swift version 6.2.1 effective-5.10 (swiftlang-6.2.1.4.8 clang-1700.4.4.1)
 // swift-module-flags: -target arm64-apple-ios13.0-simulator -enable-objc-interop -enable-library-evolution -swift-version 5 -enforce-exclusivity=checked -O -enable-experimental-feature DebugDescriptionMacro -enable-bare-slash-regex -module-name AsgardCore
-// swift-module-flags-ignorable:  -formal-cxx-interoperability-mode=off -interface-compiler-version 6.2
+// swift-module-flags-ignorable:  -formal-cxx-interoperability-mode=off -interface-compiler-version 6.2.1
 import AVFoundation
 import AVKit
 import Combine
@@ -10,6 +10,9 @@ import Foundation
 import ImageIO
 import MapKit
 import MediaPlayer
+import Photos
+import PhotosUI
+import QuickLook
 import Speech
 import Swift
 import UIKit
@@ -18,7 +21,12 @@ import _Concurrency
 import _StringProcessing
 import _SwiftConcurrencyShims
 @_hasMissingDesignatedInitializers final public class AsgardChatbot {
-  final public func sendMessage(_ text: Swift.String, action: Swift.String = "NONE", customMessageId: Swift.String = "")
+  final public var customChannelId: Swift.String {
+    get
+  }
+  #if compiler(>=5.3) && $NonescapableTypes
+  final public func sendMessage(_ text: Swift.String, action: Swift.String = "NONE", customMessageId: Swift.String = "", blobIds: [Swift.String]? = nil)
+  #endif
   final public func start()
   final public func closed()
   final public func reset()
@@ -52,8 +60,10 @@ public struct AsgardSpeechConfig {
   }
   public var text: AsgardCore.AsgardSpeechConfig.Text
   public var locale: Foundation.Locale
-  public var isEnabled: Swift.Bool
-  public init(text: AsgardCore.AsgardSpeechConfig.Text, locale: Foundation.Locale, isEnabled: Swift.Bool = true)
+  public var isEnabled: Swift.Bool {
+    get
+  }
+  public init(text: AsgardCore.AsgardSpeechConfig.Text, locale: Foundation.Locale)
 }
 public struct AsgardThemeConfig {
   public let chatbot: AsgardCore.AsgardChatbotStyle
@@ -89,16 +99,60 @@ public struct AsgardUIConfig {
   public let initMessages: [Swift.String]?
   public let connectionErrorMessage: Swift.String
   public let speechRecognition: AsgardCore.AsgardSpeechConfig?
+  public let enableUpload: Swift.Bool?
+  public let enableExport: Swift.Bool?
   public let onUIReset: (() -> Swift.Void)?
   public let onUIClose: (() -> Swift.Void)?
   public let onActionURI: ((Foundation.URL) -> Swift.Void)?
   public let onActionEMIT: ((Swift.String, [Swift.String : Swift.AnyHashable]?) -> Swift.Void)?
   #if compiler(>=5.3) && $NonescapableTypes
-  public init(title: Swift.String? = nil, avatar: Swift.String? = nil, avatarImageName: Swift.String? = nil, debugMode: Swift.Bool? = nil, inputPlaceholder: Swift.String? = nil, botTypingPlaceholder: Swift.String? = nil, theme: AsgardCore.AsgardThemeConfig = AsgardThemeConfig(), initMessages: [Swift.String]? = nil, connectionErrorMessage: Swift.String, speechRecognition: AsgardCore.AsgardSpeechConfig? = nil, onUIReset: (() -> Swift.Void)? = nil, onUIClose: (() -> Swift.Void)? = nil, onActionURI: ((Foundation.URL) -> Swift.Void)? = nil, onActionEMIT: ((Swift.String, [Swift.String : Swift.AnyHashable]?) -> Swift.Void)? = nil)
+  public init(title: Swift.String? = nil, avatar: Swift.String? = nil, avatarImageName: Swift.String? = nil, debugMode: Swift.Bool? = nil, inputPlaceholder: Swift.String? = nil, botTypingPlaceholder: Swift.String? = nil, theme: AsgardCore.AsgardThemeConfig = AsgardThemeConfig(), initMessages: [Swift.String]? = nil, connectionErrorMessage: Swift.String, speechRecognition: AsgardCore.AsgardSpeechConfig? = nil, enableUpload: Swift.Bool? = nil, enableExport: Swift.Bool? = nil, onUIReset: (() -> Swift.Void)? = nil, onUIClose: (() -> Swift.Void)? = nil, onActionURI: ((Foundation.URL) -> Swift.Void)? = nil, onActionEMIT: ((Swift.String, [Swift.String : Swift.AnyHashable]?) -> Swift.Void)? = nil)
   #endif
   public static var `default`: AsgardCore.AsgardUIConfig {
     get
   }
+}
+public enum AsgardPermissionError : Swift.Error, Foundation.LocalizedError {
+  case cameraUsageDescriptionMissing
+  case photoLibraryUsageDescriptionMissing
+  case photoLibraryAddUsageDescriptionMissing
+  case microphoneUsageDescriptionMissing
+  case speechRecognitionUsageDescriptionMissing
+  #if compiler(>=5.3) && $NonescapableTypes
+  public var errorDescription: Swift.String? {
+    get
+  }
+  #endif
+  public static func == (a: AsgardCore.AsgardPermissionError, b: AsgardCore.AsgardPermissionError) -> Swift.Bool
+  public func hash(into hasher: inout Swift.Hasher)
+  public var hashValue: Swift.Int {
+    get
+  }
+}
+@_hasMissingDesignatedInitializers final public class AsgardPermissionChecker {
+  public struct CheckResult {
+    public let isValid: Swift.Bool
+    public let missingPermissions: [AsgardCore.AsgardPermissionError]
+    public init(isValid: Swift.Bool, missingPermissions: [AsgardCore.AsgardPermissionError] = [])
+  }
+  #if compiler(>=5.3) && $NonescapableTypes
+  public static func checkCameraPermission() -> AsgardCore.AsgardPermissionError?
+  #endif
+  #if compiler(>=5.3) && $NonescapableTypes
+  public static func checkPhotoLibraryPermission() -> AsgardCore.AsgardPermissionError?
+  #endif
+  #if compiler(>=5.3) && $NonescapableTypes
+  public static func checkPhotoLibraryAddPermission() -> AsgardCore.AsgardPermissionError?
+  #endif
+  #if compiler(>=5.3) && $NonescapableTypes
+  public static func checkMicrophonePermission() -> AsgardCore.AsgardPermissionError?
+  #endif
+  #if compiler(>=5.3) && $NonescapableTypes
+  public static func checkSpeechRecognitionPermission() -> AsgardCore.AsgardPermissionError?
+  #endif
+  public static func checkPermissions(camera: Swift.Bool = false, photoLibrary: Swift.Bool = false, photoLibraryAdd: Swift.Bool = false, microphone: Swift.Bool = false, speechRecognition: Swift.Bool = false) -> AsgardCore.AsgardPermissionChecker.CheckResult
+  public static func validatePermissions(camera: Swift.Bool = false, photoLibrary: Swift.Bool = false, photoLibraryAdd: Swift.Bool = false, microphone: Swift.Bool = false, speechRecognition: Swift.Bool = false) throws
+  @objc deinit
 }
 extension Swift.KeyedDecodingContainer {
   #if compiler(>=5.3) && $NonescapableTypes
@@ -144,7 +198,6 @@ extension UIKit.UIColor {
 @objc public enum ALogDisplayLevel : Swift.Int {
   case none
   case normal
-  case full
   #if compiler(>=5.3) && $NonescapableTypes
   public init?(rawValue: Swift.Int)
   #endif
@@ -169,6 +222,8 @@ public enum AsgardError : Swift.Error {
   case invalidResponse
   case invalidURL
 }
+extension AsgardCore.AsgardPermissionError : Swift.Equatable {}
+extension AsgardCore.AsgardPermissionError : Swift.Hashable {}
 extension AsgardCore.ALogDisplayLevel : Swift.Equatable {}
 extension AsgardCore.ALogDisplayLevel : Swift.Hashable {}
 extension AsgardCore.ALogDisplayLevel : Swift.RawRepresentable {}
