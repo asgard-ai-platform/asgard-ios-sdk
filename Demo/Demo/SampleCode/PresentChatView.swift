@@ -12,7 +12,6 @@ import UIKit
 struct PresentChatView: View {
     // Configuration fields
     @State private var apiKey: String = "YOUR-API-KEY"
-    @State private var endpoint: String = "YOUR-ENDPOINT-URL"
     @State private var botProviderEndpoint: String = "YOUR-BOT-PROVIDER-ENDPOINT"
     
     var body: some View {
@@ -31,7 +30,6 @@ struct PresentChatView: View {
         // 基本資訊
         let config = AsgardConfig(
             apiKey: apiKey,
-            endpoint: endpoint,
             botProviderEndpoint: botProviderEndpoint,
             customChannelId: "1",
             isShowDebugLogs: true,

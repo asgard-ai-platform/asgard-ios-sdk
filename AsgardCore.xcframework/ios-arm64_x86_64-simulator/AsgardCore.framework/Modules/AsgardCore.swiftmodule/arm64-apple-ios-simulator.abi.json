@@ -620,51 +620,6 @@
           },
           {
             "kind": "Var",
-            "name": "endpoint",
-            "printedName": "endpoint",
-            "children": [
-              {
-                "kind": "TypeNominal",
-                "name": "String",
-                "printedName": "Swift.String",
-                "usr": "s:SS"
-              }
-            ],
-            "declKind": "Var",
-            "usr": "s:10AsgardCore0A6ConfigV8endpointSSvp",
-            "mangledName": "$s10AsgardCore0A6ConfigV8endpointSSvp",
-            "moduleName": "AsgardCore",
-            "declAttributes": [
-              "HasStorage",
-              "AccessControl",
-              "RawDocComment"
-            ],
-            "isLet": true,
-            "hasStorage": true,
-            "accessors": [
-              {
-                "kind": "Accessor",
-                "name": "Get",
-                "printedName": "Get()",
-                "children": [
-                  {
-                    "kind": "TypeNominal",
-                    "name": "String",
-                    "printedName": "Swift.String",
-                    "usr": "s:SS"
-                  }
-                ],
-                "declKind": "Accessor",
-                "usr": "s:10AsgardCore0A6ConfigV8endpointSSvg",
-                "mangledName": "$s10AsgardCore0A6ConfigV8endpointSSvg",
-                "moduleName": "AsgardCore",
-                "implicit": true,
-                "accessorKind": "get"
-              }
-            ]
-          },
-          {
-            "kind": "Var",
             "name": "botProviderEndpoint",
             "printedName": "botProviderEndpoint",
             "children": [
@@ -1198,19 +1153,13 @@
           {
             "kind": "Constructor",
             "name": "init",
-            "printedName": "init(apiKey:endpoint:botProviderEndpoint:customChannelId:isShowDebugLogs:transformSsePayload:onExecutionError:onReset:onClose:)",
+            "printedName": "init(apiKey:botProviderEndpoint:customChannelId:isShowDebugLogs:transformSsePayload:onExecutionError:onReset:onClose:)",
             "children": [
               {
                 "kind": "TypeNominal",
                 "name": "AsgardConfig",
                 "printedName": "AsgardCore.AsgardConfig",
                 "usr": "s:10AsgardCore0A6ConfigV"
-              },
-              {
-                "kind": "TypeNominal",
-                "name": "String",
-                "printedName": "Swift.String",
-                "usr": "s:SS"
               },
               {
                 "kind": "TypeNominal",
@@ -1345,8 +1294,8 @@
               }
             ],
             "declKind": "Constructor",
-            "usr": "s:10AsgardCore0A6ConfigV6apiKey8endpoint19botProviderEndpoint15customChannelId15isShowDebugLogs19transformSsePayload16onExecutionError0T5Reset0T5CloseACSS_S3SSbySScSgys0V0_pcSgyycSgAPtcfc",
-            "mangledName": "$s10AsgardCore0A6ConfigV6apiKey8endpoint19botProviderEndpoint15customChannelId15isShowDebugLogs19transformSsePayload16onExecutionError0T5Reset0T5CloseACSS_S3SSbySScSgys0V0_pcSgyycSgAPtcfc",
+            "usr": "s:10AsgardCore0A6ConfigV6apiKey19botProviderEndpoint15customChannelId15isShowDebugLogs19transformSsePayload16onExecutionError0S5Reset0S5CloseACSS_S2SSbySScSgys0U0_pcSgyycSgAOtcfc",
+            "mangledName": "$s10AsgardCore0A6ConfigV6apiKey19botProviderEndpoint15customChannelId15isShowDebugLogs19transformSsePayload16onExecutionError0S5Reset0S5CloseACSS_S2SSbySScSgys0U0_pcSgyycSgAOtcfc",
             "moduleName": "AsgardCore",
             "declAttributes": [
               "AccessControl"
@@ -9356,21 +9305,7 @@
     {
       "filePath": "\/Users\/ink\/Desktop\/WorkSpace\/AsgardProject\/asgard-ios-core\/AsgardCore\/Chatbot\/UI\/Components\/AsgardUploadProgressView.swift",
       "kind": "BooleanLiteral",
-      "offset": 2105,
-      "length": 4,
-      "value": "true"
-    },
-    {
-      "filePath": "\/Users\/ink\/Desktop\/WorkSpace\/AsgardProject\/asgard-ios-core\/AsgardCore\/Chatbot\/UI\/Components\/AsgardUploadProgressView.swift",
-      "kind": "BooleanLiteral",
-      "offset": 2172,
-      "length": 5,
-      "value": "false"
-    },
-    {
-      "filePath": "\/Users\/ink\/Desktop\/WorkSpace\/AsgardProject\/asgard-ios-core\/AsgardCore\/Chatbot\/UI\/Components\/AsgardUploadProgressView.swift",
-      "kind": "BooleanLiteral",
-      "offset": 2270,
+      "offset": 2009,
       "length": 5,
       "value": "false"
     },
@@ -10119,35 +10054,35 @@
     {
       "filePath": "\/Users\/ink\/Desktop\/WorkSpace\/AsgardProject\/asgard-ios-core\/AsgardCore\/Chatbot\/UI\/AsgardChatbotVC.swift",
       "kind": "BooleanLiteral",
-      "offset": 35109,
+      "offset": 35044,
       "length": 5,
       "value": "false"
     },
     {
       "filePath": "\/Users\/ink\/Desktop\/WorkSpace\/AsgardProject\/asgard-ios-core\/AsgardCore\/Chatbot\/UI\/AsgardChatbotVC.swift",
       "kind": "BooleanLiteral",
-      "offset": 35133,
+      "offset": 35068,
       "length": 5,
       "value": "false"
     },
     {
       "filePath": "\/Users\/ink\/Desktop\/WorkSpace\/AsgardProject\/asgard-ios-core\/AsgardCore\/Chatbot\/UI\/AsgardChatbotVC.swift",
       "kind": "BooleanLiteral",
-      "offset": 36669,
+      "offset": 36604,
       "length": 4,
       "value": "true"
     },
     {
       "filePath": "\/Users\/ink\/Desktop\/WorkSpace\/AsgardProject\/asgard-ios-core\/AsgardCore\/Chatbot\/UI\/AsgardChatbotVC.swift",
       "kind": "BooleanLiteral",
-      "offset": 38201,
+      "offset": 38136,
       "length": 5,
       "value": "false"
     },
     {
       "filePath": "\/Users\/ink\/Desktop\/WorkSpace\/AsgardProject\/asgard-ios-core\/AsgardCore\/Chatbot\/UI\/AsgardChatbotVC.swift",
       "kind": "FloatLiteral",
-      "offset": 71660,
+      "offset": 71695,
       "length": 3,
       "value": "2.0"
     },
@@ -10245,7 +10180,7 @@
     {
       "filePath": "\/Users\/ink\/Desktop\/WorkSpace\/AsgardProject\/asgard-ios-core\/AsgardCore\/Core\/Configs\/AsgardConfig.swift",
       "kind": "BooleanLiteral",
-      "offset": 1105,
+      "offset": 997,
       "length": 5,
       "value": "false"
     },

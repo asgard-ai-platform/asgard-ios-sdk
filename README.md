@@ -55,7 +55,6 @@ import AsgardCore
 ```swift
 // Create core configuration
 let coreConfig = AsgardChatbotConfig(
-    apiKey: "your-api-key",
     endpoint: "https://your-endpoint.com",
     botProviderEndpoint: "https://your-bot-provider.com",
     customChannelId: nil,

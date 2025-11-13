@@ -34,7 +34,6 @@ import _SwiftConcurrencyShims
 }
 public struct AsgardConfig {
   public let apiKey: Swift.String
-  public let endpoint: Swift.String
   public let botProviderEndpoint: Swift.String
   public let customChannelId: Swift.String
   public let isShowDebugLogs: Swift.Bool
@@ -43,7 +42,7 @@ public struct AsgardConfig {
   public var onReset: (() -> Swift.Void)?
   public let onClose: (() -> Swift.Void)?
   #if compiler(>=5.3) && $NonescapableTypes
-  public init(apiKey: Swift.String, endpoint: Swift.String, botProviderEndpoint: Swift.String, customChannelId: Swift.String, isShowDebugLogs: Swift.Bool = false, transformSsePayload: ((Swift.String) -> Swift.Void)? = nil, onExecutionError: ((any Swift.Error) -> Swift.Void)? = nil, onReset: (() -> Swift.Void)? = nil, onClose: (() -> Swift.Void)? = nil)
+  public init(apiKey: Swift.String, botProviderEndpoint: Swift.String, customChannelId: Swift.String, isShowDebugLogs: Swift.Bool = false, transformSsePayload: ((Swift.String) -> Swift.Void)? = nil, onExecutionError: ((any Swift.Error) -> Swift.Void)? = nil, onReset: (() -> Swift.Void)? = nil, onClose: (() -> Swift.Void)? = nil)
   #endif
 }
 public struct AsgardSpeechConfig {
